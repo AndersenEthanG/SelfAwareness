@@ -24,6 +24,9 @@
 		AA11D71326692C7200B35944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA11D71226692C7200B35944 /* Assets.xcassets */; };
 		AA11D72626692C8700B35944 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA11D72526692C8700B35944 /* CloudKit.framework */; };
 		AA11D72926692CAD00B35944 /* EmotionManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA11D72726692CAD00B35944 /* EmotionManager.xcdatamodeld */; };
+		C2D957B98167E298732BB30B /* Pods_SelfAwareness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8486ECE240CD026B7BC1DB0E /* Pods_SelfAwareness.framework */; };
+		C46C134495D10CB5924E58AA /* Pods_SelfAwareness_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4690C23C65B46902020374 /* Pods_SelfAwareness_WatchKit_Extension.framework */; };
+		F54D0C7C54C3CA4B181AE449 /* Pods_SelfAwareness_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F99592285220D1152C0D87 /* Pods_SelfAwareness_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1338B55F28FC9203232EF3E0 /* Pods-SelfAwareness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness.debug.xcconfig"; path = "Target Support Files/Pods-SelfAwareness/Pods-SelfAwareness.debug.xcconfig"; sourceTree = "<group>"; };
+		335EF6BEF88CBB73D6F91B6F /* Pods-SelfAwareness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness.release.xcconfig"; path = "Target Support Files/Pods-SelfAwareness/Pods-SelfAwareness.release.xcconfig"; sourceTree = "<group>"; };
+		8486ECE240CD026B7BC1DB0E /* Pods_SelfAwareness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfAwareness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F99592285220D1152C0D87 /* Pods_SelfAwareness_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfAwareness_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA11D6E226692C7000B35944 /* SelfAwareness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfAwareness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA11D6E526692C7000B35944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA11D6E726692C7000B35944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +99,11 @@
 		AA11D72326692C8100B35944 /* SelfAwareness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SelfAwareness.entitlements; sourceTree = "<group>"; };
 		AA11D72526692C8700B35944 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		AA11D72826692CAD00B35944 /* EmotionManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmotionManager.xcdatamodel; sourceTree = "<group>"; };
+		BBD59D92FA87CDAF5ACD1EC8 /* Pods-SelfAwareness WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-SelfAwareness WatchKit Extension/Pods-SelfAwareness WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		C6C8B8A72838E5C57E848D1B /* Pods-SelfAwareness WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-SelfAwareness WatchKit App/Pods-SelfAwareness WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		E4AE8ECF5F5D8652831A737E /* Pods-SelfAwareness WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-SelfAwareness WatchKit App/Pods-SelfAwareness WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		EF4690C23C65B46902020374 /* Pods_SelfAwareness_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfAwareness_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6AF904CA2AD2D6BAE0B8D91 /* Pods-SelfAwareness WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-SelfAwareness WatchKit Extension/Pods-SelfAwareness WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA11D72626692C8700B35944 /* CloudKit.framework in Frameworks */,
+				C2D957B98167E298732BB30B /* Pods_SelfAwareness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +120,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46C134495D10CB5924E58AA /* Pods_SelfAwareness_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5EE42C1899C04185C07001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54D0C7C54C3CA4B181AE449 /* Pods_SelfAwareness_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +143,7 @@
 				AA11D70926692C7100B35944 /* SelfAwareness WatchKit Extension */,
 				AA11D6E326692C7000B35944 /* Products */,
 				AA11D72426692C8700B35944 /* Frameworks */,
+				D22375F2F697705AE6038DE1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,8 +201,25 @@
 			isa = PBXGroup;
 			children = (
 				AA11D72526692C8700B35944 /* CloudKit.framework */,
+				8486ECE240CD026B7BC1DB0E /* Pods_SelfAwareness.framework */,
+				93F99592285220D1152C0D87 /* Pods_SelfAwareness_WatchKit_App.framework */,
+				EF4690C23C65B46902020374 /* Pods_SelfAwareness_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D22375F2F697705AE6038DE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1338B55F28FC9203232EF3E0 /* Pods-SelfAwareness.debug.xcconfig */,
+				335EF6BEF88CBB73D6F91B6F /* Pods-SelfAwareness.release.xcconfig */,
+				E4AE8ECF5F5D8652831A737E /* Pods-SelfAwareness WatchKit App.debug.xcconfig */,
+				C6C8B8A72838E5C57E848D1B /* Pods-SelfAwareness WatchKit App.release.xcconfig */,
+				F6AF904CA2AD2D6BAE0B8D91 /* Pods-SelfAwareness WatchKit Extension.debug.xcconfig */,
+				BBD59D92FA87CDAF5ACD1EC8 /* Pods-SelfAwareness WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,10 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA11D72026692C7200B35944 /* Build configuration list for PBXNativeTarget "SelfAwareness" */;
 			buildPhases = (
+				CF6ABBE18AAEAA5B6EE60A0F /* [CP] Check Pods Manifest.lock */,
 				AA11D6DE26692C7000B35944 /* Sources */,
 				AA11D6DF26692C7000B35944 /* Frameworks */,
 				AA11D6E026692C7000B35944 /* Resources */,
 				AA11D71F26692C7200B35944 /* Embed Watch Content */,
+				98CA0D7EC386DF9735E39C42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,8 +250,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA11D71C26692C7200B35944 /* Build configuration list for PBXNativeTarget "SelfAwareness WatchKit App" */;
 			buildPhases = (
+				07CCCDED33BE3D08713A2B7B /* [CP] Check Pods Manifest.lock */,
 				AA11D6F426692C7100B35944 /* Resources */,
 				AA11D71B26692C7200B35944 /* Embed App Extensions */,
+				EC5EE42C1899C04185C07001 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA11D71826692C7200B35944 /* Build configuration list for PBXNativeTarget "SelfAwareness WatchKit Extension" */;
 			buildPhases = (
+				3BCF198DBB0A107522B7452C /* [CP] Check Pods Manifest.lock */,
 				AA11D70126692C7100B35944 /* Sources */,
 				AA11D70226692C7100B35944 /* Frameworks */,
 				AA11D70326692C7100B35944 /* Resources */,
@@ -307,6 +352,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07CCCDED33BE3D08713A2B7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelfAwareness WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BCF198DBB0A107522B7452C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelfAwareness WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98CA0D7EC386DF9735E39C42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SelfAwareness/Pods-SelfAwareness-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SelfAwareness/Pods-SelfAwareness-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SelfAwareness/Pods-SelfAwareness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF6ABBE18AAEAA5B6EE60A0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelfAwareness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AA11D6DE26692C7000B35944 /* Sources */ = {
@@ -487,6 +618,7 @@
 		};
 		AA11D71926692C7200B35944 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6AF904CA2AD2D6BAE0B8D91 /* Pods-SelfAwareness WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -509,6 +641,7 @@
 		};
 		AA11D71A26692C7200B35944 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBD59D92FA87CDAF5ACD1EC8 /* Pods-SelfAwareness WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +665,7 @@
 		};
 		AA11D71D26692C7200B35944 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4AE8ECF5F5D8652831A737E /* Pods-SelfAwareness WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -552,6 +686,7 @@
 		};
 		AA11D71E26692C7200B35944 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6C8B8A72838E5C57E848D1B /* Pods-SelfAwareness WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -573,6 +708,7 @@
 		};
 		AA11D72126692C7200B35944 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1338B55F28FC9203232EF3E0 /* Pods-SelfAwareness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -595,6 +731,7 @@
 		};
 		AA11D72226692C7200B35944 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 335EF6BEF88CBB73D6F91B6F /* Pods-SelfAwareness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
