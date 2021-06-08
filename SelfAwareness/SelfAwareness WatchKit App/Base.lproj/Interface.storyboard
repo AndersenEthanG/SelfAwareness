@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38"/>
+    <device id="watch44"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
@@ -9,44 +9,252 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SelfAwareness_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SelfAwareness_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Hello World!" id="dee-f1-kfL"/>
+                        <group width="1" height="0.5" alignment="left" id="KHs-gM-j25">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="😀" id="hZU-dI-5xv">
+                                    <fontDescription key="font" type="system" pointSize="48"/>
+                                    <connections>
+                                        <action selector="happyBtnTap" destination="AgC-eL-Hgc" id="2d0-R7-O8c"/>
+                                        <segue destination="oP5-be-48r" kind="push" id="Qnh-V7-DAw"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="😠" id="q0L-xI-SHm">
+                                    <fontDescription key="font" type="system" pointSize="48"/>
+                                    <connections>
+                                        <action selector="madBtnTap" destination="AgC-eL-Hgc" id="fbJ-LU-MAm"/>
+                                        <segue destination="54K-4N-e82" kind="push" id="OvX-dW-67y"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" id="Z84-0F-ZPC">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="😢" id="lpo-80-dcl">
+                                    <fontDescription key="font" type="system" pointSize="48"/>
+                                    <connections>
+                                        <action selector="sadBtnTap" destination="AgC-eL-Hgc" id="p1U-U8-1IX"/>
+                                        <segue destination="Yei-9R-84Z" kind="push" id="fo2-ag-75e"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="😧" id="lLl-Yv-B7Q">
+                                    <fontDescription key="font" type="system" pointSize="48"/>
+                                    <connections>
+                                        <action selector="afraidBtnTap" destination="AgC-eL-Hgc" id="mcp-gh-7X8"/>
+                                        <segue destination="XOj-Ht-iQu" kind="push" id="hN2-vp-TYA"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="146" y="38"/>
         </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <!--Mad Interface Controller-->
+        <scene sceneID="PDL-yt-hRU">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller id="54K-4N-e82" customClass="MadInterfaceController" customModule="SelfAwareness_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                        <group width="1" alignment="left" layout="vertical" id="4YT-FO-Col">
+                            <items>
+                                <button width="1" alignment="left" title="1" id="rrZ-6w-MVe">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="firstBtnTap" destination="54K-4N-e82" id="byT-Zy-JsP"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="2" id="Kgs-Rk-8YN">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="secondBtnTap" destination="54K-4N-e82" id="RPk-hd-kth"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="3" id="z20-9B-bo4">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="thirdBtnTap" destination="54K-4N-e82" id="OTd-yY-DoN"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="4" id="Cu9-su-PDy">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="fourthBtnTap" destination="54K-4N-e82" id="kKJ-Xl-NIq"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="5" id="Tol-Xf-Ib9">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="fifthBtnTap" destination="54K-4N-e82" id="MKT-TY-5E7"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
-                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                        <outlet property="fifthBtn" destination="Tol-Xf-Ib9" id="2Lh-2d-J0C"/>
+                        <outlet property="firstBtn" destination="rrZ-6w-MVe" id="veQ-bi-hFY"/>
+                        <outlet property="fourthBtn" destination="Cu9-su-PDy" id="l0R-hK-D3L"/>
+                        <outlet property="secondBtn" destination="Kgs-Rk-8YN" id="h9V-RR-S4z"/>
+                        <outlet property="thirdBtn" destination="z20-9B-bo4" id="c7b-Wu-7x1"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="541" y="39"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <!--Sad Interface Controller-->
+        <scene sceneID="9d5-06-Nt3">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SelfAwareness_WatchKit_App" customModuleProvider="target"/>
+                <controller id="Yei-9R-84Z" customClass="SadInterfaceController" customModule="SelfAwareness_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="Lmp-04-KOE">
+                            <items>
+                                <button width="1" alignment="left" title="1" id="9bB-1c-24b">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="firstBtnTap" destination="Yei-9R-84Z" id="D1z-Rr-RSX"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="2" id="6Fy-gj-gJj">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="secondBtnTap" destination="Yei-9R-84Z" id="nMi-SA-gKK"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="3" id="OYp-C8-2cK">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="thirdBtnTap" destination="Yei-9R-84Z" id="go1-T9-YLW"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="4" id="K2f-V4-rrT">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="fourthBtnTap" destination="Yei-9R-84Z" id="XlQ-1q-ZfW"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="5" id="lTD-Vu-XDF">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="fifthBtnTap" destination="Yei-9R-84Z" id="ygU-UC-GG1"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="fifthBtn" destination="lTD-Vu-XDF" id="zyG-3b-bt1"/>
+                        <outlet property="firstBtn" destination="9bB-1c-24b" id="5IL-f9-8IS"/>
+                        <outlet property="fourthBtn" destination="K2f-V4-rrT" id="fiW-KI-JgW"/>
+                        <outlet property="secondBtn" destination="6Fy-gj-gJj" id="VGN-Nv-dHw"/>
+                        <outlet property="thirdBtn" destination="OYp-C8-2cK" id="7pZ-Za-dlz"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="146" y="641"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="Niz-AI-uX2">
+        <!--Afraid Interface Controller-->
+        <scene sceneID="79g-e6-9Ox">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="SelfAwareness_WatchKit_App" customModuleProvider="target"/>
+                <controller id="XOj-Ht-iQu" customClass="AfraidInterfaceController" customModule="SelfAwareness_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="gfN-Dy-hwl">
+                            <items>
+                                <button width="1" alignment="left" title="1" id="05l-mS-xq7">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="firstBtnTap" destination="XOj-Ht-iQu" id="iY6-Hr-xoS"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="2" id="Uw5-sm-jXj">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="secondBtnTap" destination="XOj-Ht-iQu" id="XOP-RW-dyC"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="3" id="EtF-aY-3El">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="thirdBtnTap" destination="XOj-Ht-iQu" id="wQ5-QT-LEk"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="4" id="68q-SM-zlz">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="fourthBtnTap" destination="XOj-Ht-iQu" id="EI3-XX-UUl"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="5" id="YCz-WM-3Qw">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="fifthBtnTap" destination="XOj-Ht-iQu" id="mhZ-FR-Gga"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="fifthBtn" destination="YCz-WM-3Qw" id="a4c-Gh-HCY"/>
+                        <outlet property="firstBtn" destination="05l-mS-xq7" id="w6T-i8-gha"/>
+                        <outlet property="fourthBtn" destination="68q-SM-zlz" id="oDF-sV-6zF"/>
+                        <outlet property="secondBtn" destination="Uw5-sm-jXj" id="YFk-pg-J4v"/>
+                        <outlet property="thirdBtn" destination="EtF-aY-3El" id="WCU-de-r1b"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="-238" y="39"/>
+        </scene>
+        <!--Happy Interface Controller-->
+        <scene sceneID="Q3K-KT-2nd">
+            <objects>
+                <controller id="oP5-be-48r" customClass="HappyInterfaceController" customModule="SelfAwareness_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="Lp0-8Y-bb2">
+                            <items>
+                                <button width="1" alignment="left" title="1" id="NgX-w3-IgH">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="firstBtnTap" destination="oP5-be-48r" id="7ag-vG-ukF"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="2" id="2zZ-s2-Lhr">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="secondBtnTap" destination="oP5-be-48r" id="hfA-Mj-p35"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="3" id="jIL-Q6-GPg">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="thirdBtnTap" destination="oP5-be-48r" id="qBm-ne-QtP"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="4" id="UHK-oj-PFy">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="fourthBtnTap" destination="oP5-be-48r" id="3ha-Fs-3vg"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="5" id="07V-Bv-KsM">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="fifthBtnTap" destination="oP5-be-48r" id="OWw-qZ-Gc8"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="fifthBtn" destination="07V-Bv-KsM" id="rX1-BA-uVp"/>
+                        <outlet property="firstBtn" destination="NgX-w3-IgH" id="2mr-3Y-WzC"/>
+                        <outlet property="fourthBtn" destination="UHK-oj-PFy" id="XDm-82-cc6"/>
+                        <outlet property="secondBtn" destination="2zZ-s2-Lhr" id="p6R-rc-d17"/>
+                        <outlet property="thirdBtn" destination="jIL-Q6-GPg" id="Hvu-Af-R7G"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="146" y="-581"/>
         </scene>
     </scenes>
 </document>

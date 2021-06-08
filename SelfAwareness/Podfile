@@ -8,6 +8,7 @@ target 'SelfAwareness' do
   # Pods for SelfAwareness
   pod 'Charts'
   pod 'ViewAnimator'
+  pod 'TinyConstraints'
 
 end
 

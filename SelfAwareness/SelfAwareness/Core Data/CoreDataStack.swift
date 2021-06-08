@@ -30,7 +30,7 @@ enum CoreDataStack {
     }()
     static var context: NSManagedObjectContext { container.viewContext }
     
-    // Saving thigns
+    // Saving things
     static func saveContext() {
         if context.hasChanges {
             do {

@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-SelfAwareness/Pods-SelfAwareness-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
+${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework
 ${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework
