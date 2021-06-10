@@ -6,37 +6,8 @@
 //
 
 import UIKit
-import WatchConnectivity
 
-class EmotionDetailViewController: UIViewController, WCSessionDelegate {
-    
-    // MARK: - Watch Connectivity
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        if let 🛑 = error {
-            print("Error in \(#function)\(#line) : \(🛑.localizedDescription) \n---\n \(🛑)")
-        } else {
-            print("Phone Watch Connectivity activation completed!")
-        }
-    }
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        print("Session did become inactive")
-    }
-    func sessionDidDeactivate(_ session: WCSession) {
-        print("Session did deactivate")
-    } // End of Basic Watch Connectivity functions
-    
-    
-    // Watch message landing pad
-    public func session(_: WCSession, didReceiveMessage message: [String: Any], replyHandler: @escaping ([String: Any]) -> Void) {
-        print("message received! - \(message)")
-        guard let message = message as? [String: String] else { return }
-        
-        let emotionName: String = message["emotionName"]!
-        let emotionLevel: Int = Int(message["emotionLevel"]!)!
-        // Do something cool here? Create a thing
-        EmotionController.sharedInstance.createEmotion(emotionName: emotionName, emotionLevel: emotionLevel)
-        
-    } // End of Function
+class EmotionDetailViewController: UIViewController {
     
     
     // MARK: - Outlets
@@ -58,26 +29,26 @@ class EmotionDetailViewController: UIViewController, WCSessionDelegate {
     var emotionLevel: Int = 0
     static var emotionName: String?
     var emotionNameCheck: String = ""
-
+    
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Watch Connectivity
-        if WCSession.isSupported() {
-            let session = WCSession.default
-            session.delegate = self
-            session.activate()
-        }
-        
-        updateView()
     } // End of Function viewDidLoad
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        updateView()
+    }  // End of Function viewWillAppear
     
     
     // MARK: - Functions
     func updateView() {
-        emotionCheck()
+        if EmotionDetailViewController.emotionName == nil {
+            emotionNameCheck = emotion?.emotionName ?? ""
+        } else {
+            emotionNameCheck = EmotionDetailViewController.emotionName!
+        }
         
         emotionNameLabel.text = "How \(emotionNameCheck) do you feel?"
         datePicker.date = emotion?.startTime ?? Date()
@@ -97,15 +68,7 @@ class EmotionDetailViewController: UIViewController, WCSessionDelegate {
         emotionEmojiTintUpdate(emotionIndex: emotionLevel ?? 0)
         
     } // End of Function
-    
-    func emotionCheck() {
-        var emotionName = EmotionDetailViewController.emotionName
-        if emotionName != EmotionDetailViewController.emotionName {
-            emotionName = (emotion?.emotionName)!
-        }
-        self.emotionNameCheck = emotionName ?? ""
-    }
-    
+
     // This looks pretty bad, but I'm feeling lazy, and running out of time
     func emotionEmojiTintUpdate(emotionIndex: Int16 = 5) {
         switch emotionIndex {
@@ -154,9 +117,9 @@ class EmotionDetailViewController: UIViewController, WCSessionDelegate {
     // Also updates the emotion strength data
     // TODO - Hightlight the one that you selected in some way
     @IBAction func firstBtnTap(_ sender: Any) {
+        print("First Phone button tapped")
         emotionLevel = 0
         emotionEmojiTintUpdate(emotionIndex: 0)
-        
     }
     @IBAction func secondBtnTap(_ sender: Any) {
         emotionLevel = 1

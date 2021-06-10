@@ -254,32 +254,25 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="AZz-ht-H8g">
-                                <rect key="frame" x="146" y="298.5" width="122" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="W2u-jB-sAn"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="datePickerSet:" destination="64S-fO-zb0" eventType="valueChanged" id="mcA-dg-jGm"/>
-                                </connections>
+                                <rect key="frame" x="99" y="298" width="189" height="50"/>
                             </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gZC-V6-m8Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AZz-ht-H8g" firstAttribute="centerX" secondItem="YLa-Sf-Sfx" secondAttribute="centerX" id="9bF-ej-8qX"/>
                             <constraint firstItem="YLa-Sf-Sfx" firstAttribute="top" secondItem="asg-R5-HkV" secondAttribute="bottom" constant="25" id="CrM-Lw-JQW"/>
-                            <constraint firstItem="Eha-Ha-zG4" firstAttribute="top" secondItem="AZz-ht-H8g" secondAttribute="bottom" constant="16" id="CyL-h0-481"/>
                             <constraint firstItem="asg-R5-HkV" firstAttribute="leading" secondItem="gZC-V6-m8Y" secondAttribute="leading" constant="32" id="DH4-zK-zAh"/>
-                            <constraint firstItem="AZz-ht-H8g" firstAttribute="leading" secondItem="gZC-V6-m8Y" secondAttribute="leading" constant="146" id="Igh-hB-V5L"/>
                             <constraint firstItem="asg-R5-HkV" firstAttribute="top" secondItem="coQ-5d-vAQ" secondAttribute="bottom" constant="47" id="KAT-7m-9NV"/>
                             <constraint firstItem="asg-R5-HkV" firstAttribute="top" secondItem="7hR-S4-XKL" secondAttribute="top" constant="175" id="NCi-17-gno"/>
                             <constraint firstItem="gZC-V6-m8Y" firstAttribute="trailing" secondItem="Eha-Ha-zG4" secondAttribute="trailing" constant="16" id="NSH-9r-05f"/>
                             <constraint firstAttribute="bottom" secondItem="Eha-Ha-zG4" secondAttribute="bottom" constant="16" id="QvF-8m-Ejy"/>
                             <constraint firstItem="asg-R5-HkV" firstAttribute="centerX" secondItem="YLa-Sf-Sfx" secondAttribute="centerX" id="Rtn-x2-i3q"/>
                             <constraint firstItem="Eha-Ha-zG4" firstAttribute="leading" secondItem="gZC-V6-m8Y" secondAttribute="leading" constant="16" id="hBq-c1-02M"/>
+                            <constraint firstItem="AZz-ht-H8g" firstAttribute="top" secondItem="YLa-Sf-Sfx" secondAttribute="bottom" constant="7.5" id="hcL-ga-HeJ"/>
                             <constraint firstItem="asg-R5-HkV" firstAttribute="centerX" secondItem="coQ-5d-vAQ" secondAttribute="centerX" id="mXm-dt-4he"/>
-                            <constraint firstItem="AZz-ht-H8g" firstAttribute="top" secondItem="YLa-Sf-Sfx" secondAttribute="bottom" constant="8" id="p0W-hm-Thy"/>
+                            <constraint firstItem="Eha-Ha-zG4" firstAttribute="top" secondItem="AZz-ht-H8g" secondAttribute="bottom" constant="11.5" id="mym-Ib-TsO"/>
                             <constraint firstItem="gZC-V6-m8Y" firstAttribute="trailing" secondItem="asg-R5-HkV" secondAttribute="trailing" constant="32" id="p5E-nc-EuF"/>
+                            <constraint firstItem="AZz-ht-H8g" firstAttribute="leading" secondItem="gZC-V6-m8Y" secondAttribute="leading" constant="99" id="wsR-Yo-IO0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bLf-iU-Cfe">
@@ -324,7 +317,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Cjg-qS-CdV"/>
+        <segue reference="iaV-wn-QaJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">

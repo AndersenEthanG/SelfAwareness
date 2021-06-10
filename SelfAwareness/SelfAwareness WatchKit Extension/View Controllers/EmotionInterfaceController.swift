@@ -1,5 +1,5 @@
 //
-//  MadInterfaceController.swift
+//  HappyInterfaceController.swift
 //  SelfAwareness WatchKit Extension
 //
 //  Created by Ethan Andersen on 6/8/21.
@@ -10,24 +10,31 @@ import Foundation
 import WatchConnectivity
 
 
-class MadInterfaceController: WKInterfaceController, WCSessionDelegate {
-    
+class EmotionInterfaceController: WKInterfaceController, WCSessionDelegate {
+
     // MARK: - Watch Connectivity
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        if let 🛑 = error {
-            print("Error in \(#function)\(#line) : \(🛑.localizedDescription) \n---\n \(🛑)")
-        } else {
-            print("Completed activation!")
-        }
+        switch activationState {
+        case .activated:
+            print("Watch WCSession activated")
+        case .inactive:
+            print("Watch WCSession inactive")
+        case .notActivated:
+            print("Watch WCSession not activated")
+        default:
+            print("Something went wrong on the WC Session activation!")
+        } // End of Switch
     } // End of Function
     
-    func applicationDidFinishLaunching() {
-        if WCSession.isSupported() {
-            let session = WCSession.default
-            session.delegate = self
-            session.activate()
+    // Transfer User Information (Background send Message)
+    func sendMessage() {
+        if session.activationState == .activated {
+            session.transferUserInfo(message)
         }
-    } // End of watch Setup stuff
+    } // End of Function
+    var session = WCSession.default
+    
+     // End of Watch Connectivity
     
     
     // MARK: - Outlets
@@ -41,31 +48,53 @@ class MadInterfaceController: WKInterfaceController, WCSessionDelegate {
     // MARK: - Lifecycle
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        
+        emotionName = context as! String
+        print(emotionName)
+        let session = WCSession.default
+        session.delegate = self
+        session.activate()
+        
         updateView()
+    }
+    
+    override func willActivate() {
+        super.willActivate()
     }
     
     
     // MARK: - Properties
-    var emotionName: String = "mad"
-    
+    var emotionName: String = ""
+    var emotionLevel: Int = 0
+    var message: [String: Any] = ["emotionName" : "", "emotionLevel" : 0, "timestamp" : Date()]
     
     // MARK: - Actions
     // These will work as the save button as on the EmotionDetail controller
     // Also present something saying saved or whatever
     @IBAction func firstBtnTap() {
-        sendMessage(emotion: emotionName, emotionLevel: 0)
+        message = ["emotionName" : emotionName, "emotionLevel" : 0, "timestamp" : Date()]
+        sendMessage()
+        pushController(withName: "messageVC", context: nil)
     }
     @IBAction func secondBtnTap() {
-        sendMessage(emotion: emotionName, emotionLevel: 1)
+        message = ["emotionName" : emotionName, "emotionLevel" : 1]
+        sendMessage()
+        pushController(withName: "messageVC", context: nil)
     }
     @IBAction func thirdBtnTap() {
-        sendMessage(emotion: emotionName, emotionLevel: 2)
+        message = ["emotionName" : emotionName, "emotionLevel" : 2]
+        sendMessage()
+        pushController(withName: "messageVC", context: nil)
     }
     @IBAction func fourthBtnTap() {
-        sendMessage(emotion: emotionName, emotionLevel: 3)
+        message = ["emotionName" : emotionName, "emotionLevel" : 3]
+        sendMessage()
+        pushController(withName: "messageVC", context: nil)
     }
     @IBAction func fifthBtnTap() {
-        sendMessage(emotion: emotionName, emotionLevel: 4)
+        message = ["emotionName" : emotionName, "emotionLevel" : 4]
+        sendMessage()
+        pushController(withName: "messageVC", context: nil)
     }
     
     
@@ -80,17 +109,8 @@ class MadInterfaceController: WKInterfaceController, WCSessionDelegate {
         fifthBtn.setTitle(emojis[4])
         
     } // End of Function
-
-    func sendMessage(emotion: String, emotionLevel: Int) {
-        let message = ["emotionName" : emotion,
-                       "emotionLevel" : emotionLevel] as [String : Any]
-        
-        guard WCSession.default.isReachable else { return }
-        WCSession.default.sendMessage(message, replyHandler: nil)
-        print(message)
-    } // End of sendMessage Function
     
-
+    
     // Emoji Grabber
     func emojisGrabber() -> [String] {
         let emotion = emotionName
@@ -108,5 +128,5 @@ class MadInterfaceController: WKInterfaceController, WCSessionDelegate {
         }
         return returnArray
     } // End of Emojis Grabber
-
+    
 } // End of Class

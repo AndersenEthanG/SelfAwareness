@@ -8,8 +8,41 @@
 import UIKit
 import WatchConnectivity
 
-class EmotionViewController: UIViewController  {
+class EmotionViewController: UIViewController, WCSessionDelegate {
 
+    // MARK: - Watch Connectivity
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        switch activationState {
+        case .activated:
+            print("Phone WCSession activated")
+        case .inactive:
+            print("Phone WCSession inactive")
+        case .notActivated:
+            print("Phone WCSession not activated")
+        default:
+            print("Something went wrong on the Phone WC Session activation!")
+        } // End of Switch
+    }
+    func sessionDidBecomeInactive(_ session: WCSession) { print("Phone session did become inactive") }
+    func sessionDidDeactivate(_ session: WCSession) { print("Phone session did deactivate") }
+    // End of Basic Watch Connectivity functions
+    
+    
+    func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+        print("Received user info from Watch!")
+        watchToPhoneUpdate(message: userInfo)
+    }
+    
+    func watchToPhoneUpdate(message: [String : Any]) {
+        print(message)
+        let watchEmotionName = message["emotionName"]
+        let watchEmotionLevel = message["emotionLevel"]
+        let watchTimestamp = message["timestamp"]
+        
+        EmotionController.sharedInstance.createEmotion(emotionName: watchEmotionName as! String, emotionLevel: watchEmotionLevel as! Int, timestamp: watchTimestamp as! Date)
+    }
+    
+    
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,6 +52,7 @@ class EmotionViewController: UIViewController  {
     var emotionEmojis: [String] = []
     var emotionName: String = ""
     var emotionLevel: Int = 0
+    var message: [String: Any] = ["emotionName" : "", "emotionLevel" : 0]
     
     
     // MARK: - Lifecycle
@@ -26,9 +60,16 @@ class EmotionViewController: UIViewController  {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        
+        // Watch Connectivity support
+        if WCSession.isSupported() {
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
+        NotificationCenter.default.addObserver(self, selector: #selector(fetchEmotions), name: UIApplication.didBecomeActiveNotification, object: nil)
         EmotionController.sharedInstance.fetchEmotion()
         tableView.reloadData()
-
     } // End of View Did Load
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,6 +104,12 @@ class EmotionViewController: UIViewController  {
     }
     
     
+    // MARK: - Functions
+    @objc func fetchEmotions() {
+        EmotionController.sharedInstance.fetchEmotion()
+    } // End of Function
+    
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toEmotionDetailVC" {
@@ -71,6 +118,7 @@ class EmotionViewController: UIViewController  {
             
             let emotion = EmotionController.sharedInstance.emotions[indexPath.row]
             destinationVC.emotion = emotion
+            EmotionDetailViewController.emotionName = nil
         }
     } // End of Segue Function
     

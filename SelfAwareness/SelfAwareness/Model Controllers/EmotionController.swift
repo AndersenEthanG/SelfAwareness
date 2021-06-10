@@ -25,9 +25,9 @@ class EmotionController {
     
     
     // MARK: - Functionss
-    func createEmotion(emotionName: String, emotionLevel: Int, emotionNote: String = "", startTime: Date = Date()) {
+    func createEmotion(emotionName: String, emotionLevel: Int, emotionNote: String = "", startTime: Date = Date(), timestamp: Date = Date()) {
         // Enter in the new data, save the data
-        let emotion = Emotion(emotionName: emotionName, emotionLevel: emotionLevel, note: emotionNote, startTime: startTime)
+        let emotion = Emotion(emotionName: emotionName, emotionLevel: emotionLevel, note: emotionNote, timestamp: timestamp, startTime: startTime)
         
         if emotion.note == "" {
             emotion.note = emotion.emotionName?.capitalizingFirstLetter()
