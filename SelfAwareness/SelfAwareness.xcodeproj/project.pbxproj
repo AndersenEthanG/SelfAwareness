@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA007781266943BC002346E1 /* Emotion+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA007780266943BC002346E1 /* Emotion+Convenience.swift */; };
+		AA007783266943C7002346E1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA007782266943C7002346E1 /* CoreDataStack.swift */; };
+		AA0077852669518D002346E1 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0077842669518D002346E1 /* StringConstants.swift */; };
+		AA00778A2669602A002346E1 /* EmotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0077892669602A002346E1 /* EmotionController.swift */; };
 		AA11D6E626692C7000B35944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11D6E526692C7000B35944 /* AppDelegate.swift */; };
 		AA11D6E826692C7000B35944 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11D6E726692C7000B35944 /* SceneDelegate.swift */; };
 		AA11D6ED26692C7000B35944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA11D6EB26692C7000B35944 /* Main.storyboard */; };
@@ -23,6 +27,14 @@
 		AA11D71326692C7200B35944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA11D71226692C7200B35944 /* Assets.xcassets */; };
 		AA11D72626692C8700B35944 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA11D72526692C8700B35944 /* CloudKit.framework */; };
 		AA11D72926692CAD00B35944 /* EmotionManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA11D72726692CAD00B35944 /* EmotionManager.xcdatamodeld */; };
+		AA24D53D267027BB007AA3A6 /* MessageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24D53C267027BB007AA3A6 /* MessageInterfaceController.swift */; };
+		AA2DE7A7266FF96D00CB900E /* EmotionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2DE7A6266FF96D00CB900E /* EmotionInterfaceController.swift */; };
+		AA374CFF2669AC95000B0C84 /* EmotionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA374CFE2669AC95000B0C84 /* EmotionDetailViewController.swift */; };
+		AA374D082669B07A000B0C84 /* EmotionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA374D072669B07A000B0C84 /* EmotionTableViewCell.swift */; };
+		AA374D0B2669B51F000B0C84 /* EmojiGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA374D0A2669B51F000B0C84 /* EmojiGrabber.swift */; };
+		AA374D0D2669B8BA000B0C84 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA374D0C2669B8BA000B0C84 /* DateFormat.swift */; };
+		AA5BCC61266AB96C0055750F /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5BCC60266AB96C0055750F /* EmotionViewController.swift */; };
+		AAE19AD3266EE0510001E858 /* StringCapitalizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */; };
 		C2D957B98167E298732BB30B /* Pods_SelfAwareness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8486ECE240CD026B7BC1DB0E /* Pods_SelfAwareness.framework */; };
 		C46C134495D10CB5924E58AA /* Pods_SelfAwareness_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4690C23C65B46902020374 /* Pods_SelfAwareness_WatchKit_Extension.framework */; };
 		F54D0C7C54C3CA4B181AE449 /* Pods_SelfAwareness_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F99592285220D1152C0D87 /* Pods_SelfAwareness_WatchKit_App.framework */; };
@@ -75,6 +87,10 @@
 		335EF6BEF88CBB73D6F91B6F /* Pods-SelfAwareness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness.release.xcconfig"; path = "Target Support Files/Pods-SelfAwareness/Pods-SelfAwareness.release.xcconfig"; sourceTree = "<group>"; };
 		8486ECE240CD026B7BC1DB0E /* Pods_SelfAwareness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfAwareness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F99592285220D1152C0D87 /* Pods_SelfAwareness_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfAwareness_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA007780266943BC002346E1 /* Emotion+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Emotion+Convenience.swift"; sourceTree = "<group>"; };
+		AA007782266943C7002346E1 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		AA0077842669518D002346E1 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		AA0077892669602A002346E1 /* EmotionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionController.swift; sourceTree = "<group>"; };
 		AA11D6E226692C7000B35944 /* SelfAwareness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfAwareness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA11D6E526692C7000B35944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA11D6E726692C7000B35944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +113,14 @@
 		AA11D72326692C8100B35944 /* SelfAwareness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SelfAwareness.entitlements; sourceTree = "<group>"; };
 		AA11D72526692C8700B35944 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		AA11D72826692CAD00B35944 /* EmotionManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmotionManager.xcdatamodel; sourceTree = "<group>"; };
+		AA24D53C267027BB007AA3A6 /* MessageInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInterfaceController.swift; sourceTree = "<group>"; };
+		AA2DE7A6266FF96D00CB900E /* EmotionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionInterfaceController.swift; sourceTree = "<group>"; };
+		AA374CFE2669AC95000B0C84 /* EmotionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionDetailViewController.swift; sourceTree = "<group>"; };
+		AA374D072669B07A000B0C84 /* EmotionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionTableViewCell.swift; sourceTree = "<group>"; };
+		AA374D0A2669B51F000B0C84 /* EmojiGrabber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiGrabber.swift; sourceTree = "<group>"; };
+		AA374D0C2669B8BA000B0C84 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		AA5BCC60266AB96C0055750F /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
+		AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCapitalizing.swift; sourceTree = "<group>"; };
 		BBD59D92FA87CDAF5ACD1EC8 /* Pods-SelfAwareness WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-SelfAwareness WatchKit Extension/Pods-SelfAwareness WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		C6C8B8A72838E5C57E848D1B /* Pods-SelfAwareness WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-SelfAwareness WatchKit App/Pods-SelfAwareness WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		E4AE8ECF5F5D8652831A737E /* Pods-SelfAwareness WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-SelfAwareness WatchKit App/Pods-SelfAwareness WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				AA00777D2669325B002346E1 /* View Controllers */,
+				AA374D092669B07D000B0C84 /* Custom Cells */,
 				AA00777C26693256002346E1 /* Storyboard */,
 			);
 			path = Views;
@@ -165,6 +190,8 @@
 		AA00777D2669325B002346E1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AA5BCC60266AB96C0055750F /* EmotionViewController.swift */,
+				AA374CFE2669AC95000B0C84 /* EmotionDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -173,6 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				AA11D72726692CAD00B35944 /* EmotionManager.xcdatamodeld */,
+				AA007782266943C7002346E1 /* CoreDataStack.swift */,
+				AA007780266943BC002346E1 /* Emotion+Convenience.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -180,8 +209,20 @@
 		AA00777F26693298002346E1 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AA0077892669602A002346E1 /* EmotionController.swift */,
 			);
 			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		AA007786266953B9002346E1 /* Extensions and Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AA0077842669518D002346E1 /* StringConstants.swift */,
+				AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */,
+				AA374D0A2669B51F000B0C84 /* EmojiGrabber.swift */,
+				AA374D0C2669B8BA000B0C84 /* DateFormat.swift */,
+			);
+			path = "Extensions and Helpers";
 			sourceTree = "<group>";
 		};
 		AA11D6D926692C7000B35944 = {
@@ -214,6 +255,7 @@
 				AA00777F26693298002346E1 /* Model Controllers */,
 				AA00777B26693250002346E1 /* Views */,
 				AA00777A26693248002346E1 /* Resources */,
+				AA007786266953B9002346E1 /* Extensions and Helpers */,
 			);
 			path = SelfAwareness;
 			sourceTree = "<group>";
@@ -231,7 +273,7 @@
 		AA11D70926692C7100B35944 /* SelfAwareness WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				AA11D70A26692C7100B35944 /* InterfaceController.swift */,
+				AA374D062669AE1C000B0C84 /* View Controllers */,
 				AA11D70C26692C7100B35944 /* ExtensionDelegate.swift */,
 				AA11D70E26692C7100B35944 /* NotificationController.swift */,
 				AA11D71026692C7100B35944 /* ComplicationController.swift */,
@@ -251,6 +293,24 @@
 				EF4690C23C65B46902020374 /* Pods_SelfAwareness_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA374D062669AE1C000B0C84 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA11D70A26692C7100B35944 /* InterfaceController.swift */,
+				AA2DE7A6266FF96D00CB900E /* EmotionInterfaceController.swift */,
+				AA24D53C267027BB007AA3A6 /* MessageInterfaceController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AA374D092669B07D000B0C84 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AA374D072669B07A000B0C84 /* EmotionTableViewCell.swift */,
+			);
+			path = "Custom Cells";
 			sourceTree = "<group>";
 		};
 		D22375F2F697705AE6038DE1 /* Pods */ = {
@@ -488,9 +548,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5BCC61266AB96C0055750F /* EmotionViewController.swift in Sources */,
+				AA007783266943C7002346E1 /* CoreDataStack.swift in Sources */,
 				AA11D72926692CAD00B35944 /* EmotionManager.xcdatamodeld in Sources */,
+				AA0077852669518D002346E1 /* StringConstants.swift in Sources */,
+				AA374D082669B07A000B0C84 /* EmotionTableViewCell.swift in Sources */,
+				AAE19AD3266EE0510001E858 /* StringCapitalizing.swift in Sources */,
 				AA11D6E626692C7000B35944 /* AppDelegate.swift in Sources */,
+				AA00778A2669602A002346E1 /* EmotionController.swift in Sources */,
+				AA374CFF2669AC95000B0C84 /* EmotionDetailViewController.swift in Sources */,
+				AA374D0D2669B8BA000B0C84 /* DateFormat.swift in Sources */,
+				AA374D0B2669B51F000B0C84 /* EmojiGrabber.swift in Sources */,
 				AA11D6E826692C7000B35944 /* SceneDelegate.swift in Sources */,
+				AA007781266943BC002346E1 /* Emotion+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +569,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA11D70F26692C7100B35944 /* NotificationController.swift in Sources */,
+				AA24D53D267027BB007AA3A6 /* MessageInterfaceController.swift in Sources */,
 				AA11D71126692C7100B35944 /* ComplicationController.swift in Sources */,
+				AA2DE7A7266FF96D00CB900E /* EmotionInterfaceController.swift in Sources */,
 				AA11D70D26692C7100B35944 /* ExtensionDelegate.swift in Sources */,
 				AA11D70B26692C7100B35944 /* InterfaceController.swift in Sources */,
 			);

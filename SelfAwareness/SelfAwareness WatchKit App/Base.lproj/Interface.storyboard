@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38"/>
+    <device id="watch44"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
@@ -9,44 +9,109 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SelfAwareness_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SelfAwareness_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Hello World!" id="dee-f1-kfL"/>
+                        <group width="1" height="0.5" alignment="left" id="KHs-gM-j25">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="😀" id="hZU-dI-5xv">
+                                    <fontDescription key="font" type="system" pointSize="48"/>
+                                    <connections>
+                                        <action selector="happyBtnTap" destination="AgC-eL-Hgc" id="2d0-R7-O8c"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="😠" id="q0L-xI-SHm">
+                                    <fontDescription key="font" type="system" pointSize="48"/>
+                                    <connections>
+                                        <action selector="madBtnTap" destination="AgC-eL-Hgc" id="fbJ-LU-MAm"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" id="Z84-0F-ZPC">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="😢" id="lpo-80-dcl">
+                                    <fontDescription key="font" type="system" pointSize="48"/>
+                                    <connections>
+                                        <action selector="sadBtnTap" destination="AgC-eL-Hgc" id="p1U-U8-1IX"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="😧" id="lLl-Yv-B7Q">
+                                    <fontDescription key="font" type="system" pointSize="48"/>
+                                    <connections>
+                                        <action selector="afraidBtnTap" destination="AgC-eL-Hgc" id="mcp-gh-7X8"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="146" y="38"/>
         </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <!--emotionDetailVC-->
+        <scene sceneID="Q3K-KT-2nd">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller identifier="emotionDetailVC" id="oP5-be-48r" customClass="EmotionInterfaceController" customModule="SelfAwareness_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                        <group width="1" alignment="left" layout="vertical" id="Lp0-8Y-bb2">
+                            <items>
+                                <button width="1" alignment="left" title="1" id="NgX-w3-IgH">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="firstBtnTap" destination="oP5-be-48r" id="7ag-vG-ukF"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="2" id="2zZ-s2-Lhr">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="secondBtnTap" destination="oP5-be-48r" id="hfA-Mj-p35"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="3" id="jIL-Q6-GPg">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="thirdBtnTap" destination="oP5-be-48r" id="qBm-ne-QtP"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="4" id="UHK-oj-PFy">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="fourthBtnTap" destination="oP5-be-48r" id="3ha-Fs-3vg"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="5" id="07V-Bv-KsM">
+                                    <fontDescription key="font" type="system" pointSize="96"/>
+                                    <connections>
+                                        <action selector="fifthBtnTap" destination="oP5-be-48r" id="OWw-qZ-Gc8"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
-                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                        <outlet property="fifthBtn" destination="07V-Bv-KsM" id="rX1-BA-uVp"/>
+                        <outlet property="firstBtn" destination="NgX-w3-IgH" id="2mr-3Y-WzC"/>
+                        <outlet property="fourthBtn" destination="UHK-oj-PFy" id="XDm-82-cc6"/>
+                        <outlet property="secondBtn" destination="2zZ-s2-Lhr" id="p6R-rc-d17"/>
+                        <outlet property="thirdBtn" destination="jIL-Q6-GPg" id="Hvu-Af-R7G"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="409" y="38"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <!--messageVC-->
+        <scene sceneID="Haj-ee-XKD">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SelfAwareness_WatchKit_App" customModuleProvider="target"/>
+                <controller identifier="messageVC" id="Fdy-7Z-jTy" customClass="MessageInterfaceController" customModule="SelfAwareness_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="102" alignment="left" text="(messageLabel)" textAlignment="center" baselineAdjustment="alignCenters" id="bDu-p7-5vk"/>
+                    </items>
+                    <connections>
+                        <outlet property="messageLabel" destination="bDu-p7-5vk" id="Tkq-51-Wyl"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="Niz-AI-uX2">
-            <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="SelfAwareness_WatchKit_App" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="696" y="38"/>
         </scene>
     </scenes>
 </document>
