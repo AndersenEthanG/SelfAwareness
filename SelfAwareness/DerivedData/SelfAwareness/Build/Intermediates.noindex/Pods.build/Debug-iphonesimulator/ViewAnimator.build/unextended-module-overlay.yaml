@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Build/Products/Debug-iphonesimulator/ViewAnimator/ViewAnimator.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ViewAnimator.build/unextended-module.modulemap",
+    }]
+  }]
+}

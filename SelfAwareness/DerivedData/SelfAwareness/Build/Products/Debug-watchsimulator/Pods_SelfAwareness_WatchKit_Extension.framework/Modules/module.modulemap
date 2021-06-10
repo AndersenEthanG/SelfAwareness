@@ -1,0 +1,6 @@
+framework module Pods_SelfAwareness_WatchKit_Extension {
+  umbrella header "Pods-SelfAwareness WatchKit Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}

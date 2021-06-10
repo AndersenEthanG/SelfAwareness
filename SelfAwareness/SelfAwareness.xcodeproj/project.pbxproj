@@ -26,8 +26,8 @@
 		AA11D71126692C7100B35944 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11D71026692C7100B35944 /* ComplicationController.swift */; };
 		AA11D71326692C7200B35944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA11D71226692C7200B35944 /* Assets.xcassets */; };
 		AA11D72626692C8700B35944 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA11D72526692C8700B35944 /* CloudKit.framework */; };
-		AA11D72926692CAD00B35944 /* EmotionManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA11D72726692CAD00B35944 /* EmotionManager.xcdatamodeld */; };
 		AA24D53D267027BB007AA3A6 /* MessageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24D53C267027BB007AA3A6 /* MessageInterfaceController.swift */; };
+		AA2BD7F12672B7B70037F2FB /* EmotionManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA11D72726692CAD00B35944 /* EmotionManager.xcdatamodeld */; };
 		AA2DE7A7266FF96D00CB900E /* EmotionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2DE7A6266FF96D00CB900E /* EmotionInterfaceController.swift */; };
 		AA374CFF2669AC95000B0C84 /* EmotionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA374CFE2669AC95000B0C84 /* EmotionDetailViewController.swift */; };
 		AA374D082669B07A000B0C84 /* EmotionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA374D072669B07A000B0C84 /* EmotionTableViewCell.swift */; };
@@ -549,8 +549,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA5BCC61266AB96C0055750F /* EmotionViewController.swift in Sources */,
+				AA2BD7F12672B7B70037F2FB /* EmotionManager.xcdatamodeld in Sources */,
 				AA007783266943C7002346E1 /* CoreDataStack.swift in Sources */,
-				AA11D72926692CAD00B35944 /* EmotionManager.xcdatamodeld in Sources */,
 				AA0077852669518D002346E1 /* StringConstants.swift in Sources */,
 				AA374D082669B07A000B0C84 /* EmotionTableViewCell.swift in Sources */,
 				AAE19AD3266EE0510001E858 /* StringCapitalizing.swift in Sources */,

@@ -6,9 +6,7 @@ target 'SelfAwareness' do
   use_frameworks!
 
   # Pods for SelfAwareness
-  pod 'Charts'
   pod 'ViewAnimator'
-  pod 'TinyConstraints'
 
 end
 
