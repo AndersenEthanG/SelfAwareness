@@ -249,11 +249,13 @@ SWIFT_CLASS_NAMED("Emotion")
 @class UILabel;
 @class UIDatePicker;
 @class UITextView;
+@class UITouch;
+@class UIEvent;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC13SelfAwareness27EmotionDetailViewController")
-@interface EmotionDetailViewController : UIViewController
+@interface EmotionDetailViewController : UIViewController <UITextViewDelegate>
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified firstBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified secondBtn;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified thirdBtn;
@@ -264,6 +266,7 @@ SWIFT_CLASS("_TtC13SelfAwareness27EmotionDetailViewController")
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified emotionNoteView;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (IBAction)firstBtnTap:(id _Nonnull)sender;
 - (IBAction)secondBtnTap:(id _Nonnull)sender;
 - (IBAction)thirdBtnTap:(id _Nonnull)sender;

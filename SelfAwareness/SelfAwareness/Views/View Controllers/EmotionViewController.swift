@@ -58,6 +58,8 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        // This makes the navigation item on the main page go away
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -74,6 +76,7 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         tableView.reloadData()
     } // End of View Will Appear
     

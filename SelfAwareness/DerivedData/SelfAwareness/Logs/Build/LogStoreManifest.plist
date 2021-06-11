@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>32CEC439-720A-4439-A28D-439621C01AD5</key>
+		<key>386D1504-4830-4F85-941A-218446898B2E</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>32CEC439-720A-4439-A28D-439621C01AD5.xcactivitylog</string>
+			<string>386D1504-4830-4F85-941A-218446898B2E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Build SelfAwareness</string>
 			<key>timeStartedRecording</key>
-			<real>645053086.84318399</real>
+			<real>645120039.86074305</real>
 			<key>timeStoppedRecording</key>
-			<real>645053088.591519</real>
+			<real>645120044.74168503</real>
 			<key>title</key>
 			<string>Build SelfAwareness</string>
 			<key>uniqueIdentifier</key>
-			<string>32CEC439-720A-4439-A28D-439621C01AD5</string>
+			<string>386D1504-4830-4F85-941A-218446898B2E</string>
 		</dict>
-		<key>B90DBF7C-75CB-42D9-9494-BB47642CCE1E</key>
+		<key>E03C52E1-D5FB-425C-A985-3C4F12DC4117</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>B90DBF7C-75CB-42D9-9494-BB47642CCE1E.xcactivitylog</string>
+			<string>E03C52E1-D5FB-425C-A985-3C4F12DC4117.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,47 +66,13 @@
 			<key>signature</key>
 			<string>Build SelfAwareness</string>
 			<key>timeStartedRecording</key>
-			<real>645053045.49332201</real>
+			<real>645061228.22239399</real>
 			<key>timeStoppedRecording</key>
-			<real>645053050.35685694</real>
+			<real>645061231.97030401</real>
 			<key>title</key>
 			<string>Build SelfAwareness</string>
 			<key>uniqueIdentifier</key>
-			<string>B90DBF7C-75CB-42D9-9494-BB47642CCE1E</string>
-		</dict>
-		<key>DBDA3234-8B74-4276-B678-5C5D86774134</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>DBDA3234-8B74-4276-B678-5C5D86774134.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SelfAwareness project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SelfAwareness</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SelfAwareness</string>
-			<key>timeStartedRecording</key>
-			<real>645053064.405213</real>
-			<key>timeStoppedRecording</key>
-			<real>645053085.87997401</real>
-			<key>title</key>
-			<string>Build SelfAwareness</string>
-			<key>uniqueIdentifier</key>
-			<string>DBDA3234-8B74-4276-B678-5C5D86774134</string>
+			<string>E03C52E1-D5FB-425C-A985-3C4F12DC4117</string>
 		</dict>
 	</dict>
 </dict>

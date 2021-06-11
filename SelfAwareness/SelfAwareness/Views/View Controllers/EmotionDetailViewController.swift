@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EmotionDetailViewController: UIViewController {
+class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     
     
     // MARK: - Outlets
@@ -34,12 +34,24 @@ class EmotionDetailViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Make the navigation bar reappear (Main page makes it dissapear)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        updateColors()
+        
+        // This is for dismissing the keyboard on touching
+        self.emotionNoteView.delegate = self
     } // End of Function viewDidLoad
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         updateView()
+        updateColors()
     }  // End of Function viewWillAppear
+    
+    // This function makes the keyboard go away when typing around
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    } // End of Function
     
     
     // MARK: - Functions
@@ -108,6 +120,23 @@ class EmotionDetailViewController: UIViewController {
             thirdBtn.backgroundColor = .white
             fourthBtn.backgroundColor = .white
             fifthBtn.backgroundColor = .white
+        }
+    } // End of Function
+    
+    // This will update the background color based on the emotion
+    func updateColors() {
+        let color: String = emotionNameCheck
+        switch color {
+        case "happy":
+            self.view.backgroundColor = UIColor.yellow
+        case "mad":
+            self.view.backgroundColor = UIColor.red
+        case "sad":
+            self.view.backgroundColor = UIColor.blue
+        case "afraid":
+            self.view.backgroundColor = UIColor.purple
+        default:
+            self.view.backgroundColor = UIColor.white
         }
     } // End of Function
     

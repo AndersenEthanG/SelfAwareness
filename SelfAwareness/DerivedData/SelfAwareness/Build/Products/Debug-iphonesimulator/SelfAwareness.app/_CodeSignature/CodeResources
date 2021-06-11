@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		/DKMkQNYtq85Ulw5I5ZSvKqVJJY=
+		YRiOqzSqaDe45ATTRB6AvWsBlTc=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		oPF6GEURQaq6zHy4XazHOaXAQUY=
+		odbrCvbFKULn2bF9irGbveNHOl4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/64S-fO-zb0-view-7hR-S4-XKL.nib</key>
 		<data>
-		pUkGVKe5jar97OuWJlhiBPqbqZY=
+		UQ5DsqDoRSkGTl28VENATHP9jRQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		APJj7sxKYrWn9Bq9xWgChbsv6i0=
+		siDqg2fN+deZwRZOwkGm9RIpASc=
 		</data>
-		<key>Base.lproj/Main.storyboardc/UINavigationController-GnF-Ah-9Zv.nib</key>
+		<key>Base.lproj/Main.storyboardc/UINavigationController-NKS-HO-h6a.nib</key>
 		<data>
-		bcRThYxtjNebcYO2q09LSndjVZ8=
+		+RebRRyhj1qt3fuI7ia6wRVT0+M=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-64S-fO-zb0.nib</key>
 		<data>
-		jItS7hDV9jwCglvXHT7Ee/YLSSI=
+		UAeXYcFVBYdnXWdtOEfUo0z2WPs=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Urh-p5-YTq-view-Q0L-Oa-0pF.nib</key>
 		<data>
-		kvhatBu0CPSGulFcWxl0qfpmAuw=
+		HiIlBlB5mAGI8uGhHmdkZWR9uBY=
 		</data>
 		<key>EmotionManager.momd/EmotionManager.mom</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		z6zW9yeQaoDOpUDnQxjEvHItkW0=
+		/t37cfb3DSY0kgNjF4LBpoOsY+0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -112,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e+qXbq8o0WqjVzwgnmory2yMwkvSzqQN66peZu4qeGo=
+			nlrWn/SNX6iM9PcpA5YRBIqitSut/Ke2/XoPe0HwOHA=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -126,42 +126,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SKdZBos9IOO+D4KT6Ln7ON3ejR6ogHdVuNjaiLLc0aU=
+			hz+6nS7Gt0tUV5yP0w2K9wHsqssWjN31V9rBm3U3Rxo=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/64S-fO-zb0-view-7hR-S4-XKL.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DSgKpg+wpJAA5hgHiIgxrLQyQerLM44sxrXQGaYSy3I=
+			VC8ruKOvCUtt71gi/30G94aSxPMuXRRNc8K3z8i98oo=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H7dcb4PsIJqltIxeACcT91ljn+WBdOpnP3j9Drk+Uks=
+			PJrgKOulicwQxFvqiOREGp1MLpdoTg5/4X8XcKxt+cI=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UINavigationController-GnF-Ah-9Zv.nib</key>
+		<key>Base.lproj/Main.storyboardc/UINavigationController-NKS-HO-h6a.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Shdkxv3tVuV2Pl8DviWfG+A5oMj+uaX/BXxsHnLgmeQ=
+			JW6iroVGYKL+qrAkfjuShnwvb3EqSvFUi6N44kFjvgc=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-64S-fO-zb0.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eW2vh9PHJ8rHbB/ekolBIR9BAsO/Igipwk3Ho/wE65g=
+			RlPenp6AV/8a/+AA7bRLruS9w/+nzO3OtaJUOCDe9PI=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Urh-p5-YTq-view-Q0L-Oa-0pF.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TSdJUvzcwO1milgHH1azoBZc73ya7NHCiv1Bv7VWkY4=
+			PjbKcYucsWXK13lQhapGLunVZJA+HMArtytqZ1x1JaM=
 			</data>
 		</dict>
 		<key>EmotionManager.momd/EmotionManager.mom</key>
