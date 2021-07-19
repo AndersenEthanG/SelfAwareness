@@ -1,6 +1,6 @@
-version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+version: "Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)"
 options: "e52a89adbf18a4c298cb340dc7af492e"
-build_time: [1623360244, 579285000]
+build_time: [1624913064, 781356000]
 inputs:
   "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/Pods/ViewAnimator/Sources/Protocols/Animation.swift": [1623360196, 402150849]
   "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/Pods/ViewAnimator/Sources/Models/AnimationType.swift": [1623360196, 400528537]

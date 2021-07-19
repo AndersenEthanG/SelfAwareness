@@ -6,35 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>2425A915-8A3D-49A1-A33A-C47F8428559B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>2425A915-8A3D-49A1-A33A-C47F8428559B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>signature</key>
-			<string>ViewAnimator-bnfalwslcpbvxvcqfmjulxyfhisx</string>
-			<key>timeStartedRecording</key>
-			<real>645120041.00548196</real>
-			<key>timeStoppedRecording</key>
-			<real>645120041.02790403</real>
-			<key>title</key>
-			<string>Build target ViewAnimator</string>
-			<key>uniqueIdentifier</key>
-			<string>2425A915-8A3D-49A1-A33A-C47F8428559B</string>
-		</dict>
-		<key>69926DF3-63C8-466E-9BD4-439D65DC6C03</key>
+		<key>071AD776-2D71-4935-8E52-543C58FC3621</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
 			<key>fileName</key>
-			<string>69926DF3-63C8-466E-9BD4-439D65DC6C03.xcactivitylog</string>
+			<string>071AD776-2D71-4935-8E52-543C58FC3621.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -54,15 +26,15 @@
 			<key>signature</key>
 			<string>SelfAwareness_WatchKit_App-cvpjsqybkngvthgrjhwhedbvrdvj</string>
 			<key>timeStartedRecording</key>
-			<real>645120041.05068898</real>
+			<real>647814546.34882903</real>
 			<key>timeStoppedRecording</key>
-			<real>645120041.83205795</real>
+			<real>647814546.93854594</real>
 			<key>title</key>
 			<string>Build target SelfAwareness WatchKit App</string>
 			<key>uniqueIdentifier</key>
-			<string>69926DF3-63C8-466E-9BD4-439D65DC6C03</string>
+			<string>071AD776-2D71-4935-8E52-543C58FC3621</string>
 		</dict>
-		<key>7A06C941-2A6A-4640-82E4-D7425FA7FAD0</key>
+		<key>B97DDE90-CBE8-4307-9062-7BA3D35A8436</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -71,82 +43,26 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>7A06C941-2A6A-4640-82E4-D7425FA7FAD0.xcactivitylog</string>
+			<string>B97DDE90-CBE8-4307-9062-7BA3D35A8436.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>E</string>
 			</dict>
 			<key>signature</key>
 			<string>SelfAwareness-cvpjsqybkngvthgrjhwhedbvrdvj</string>
 			<key>timeStartedRecording</key>
-			<real>645120041.83246005</real>
+			<real>647818371.20982599</real>
 			<key>timeStoppedRecording</key>
-			<real>645120044.733711</real>
+			<real>647818371.21003401</real>
 			<key>title</key>
 			<string>Build target SelfAwareness</string>
 			<key>uniqueIdentifier</key>
-			<string>7A06C941-2A6A-4640-82E4-D7425FA7FAD0</string>
+			<string>B97DDE90-CBE8-4307-9062-7BA3D35A8436</string>
 		</dict>
-		<key>7C815E2A-1EB0-45F4-A3D3-92235D7DF8A0</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>7C815E2A-1EB0-45F4-A3D3-92235D7DF8A0.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>Pods-SelfAwareness_WatchKit_Extension-bnfalwslcpbvxvcqfmjulxyfhisx</string>
-			<key>timeStartedRecording</key>
-			<real>645120041.00670195</real>
-			<key>timeStoppedRecording</key>
-			<real>645120041.02840698</real>
-			<key>title</key>
-			<string>Build target Pods-SelfAwareness WatchKit Extension</string>
-			<key>uniqueIdentifier</key>
-			<string>7C815E2A-1EB0-45F4-A3D3-92235D7DF8A0</string>
-		</dict>
-		<key>86F42874-7A98-4784-966E-66673732E868</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>86F42874-7A98-4784-966E-66673732E868.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>Pods-SelfAwareness_WatchKit_App-bnfalwslcpbvxvcqfmjulxyfhisx</string>
-			<key>timeStartedRecording</key>
-			<real>645120041.00654495</real>
-			<key>timeStoppedRecording</key>
-			<real>645120041.02848494</real>
-			<key>title</key>
-			<string>Build target Pods-SelfAwareness WatchKit App</string>
-			<key>uniqueIdentifier</key>
-			<string>86F42874-7A98-4784-966E-66673732E868</string>
-		</dict>
-		<key>98AA0ED4-197A-4566-9D43-7930CC110248</key>
+		<key>D226D001-886D-4F28-976A-DC79654D25AB</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -155,26 +71,26 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
 			<key>fileName</key>
-			<string>98AA0ED4-197A-4566-9D43-7930CC110248.xcactivitylog</string>
+			<string>D226D001-886D-4F28-976A-DC79654D25AB.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>signature</key>
 			<string>SelfAwareness_WatchKit_Extension-cvpjsqybkngvthgrjhwhedbvrdvj</string>
 			<key>timeStartedRecording</key>
-			<real>645060541.22165203</real>
+			<real>647814430.90476799</real>
 			<key>timeStoppedRecording</key>
-			<real>645060542.17591798</real>
+			<real>647814446.98171699</real>
 			<key>title</key>
 			<string>Build target SelfAwareness WatchKit Extension</string>
 			<key>uniqueIdentifier</key>
-			<string>98AA0ED4-197A-4566-9D43-7930CC110248</string>
+			<string>D226D001-886D-4F28-976A-DC79654D25AB</string>
 		</dict>
-		<key>FEFFA97C-13A5-48EE-9020-363834D91877</key>
+		<key>E80B7B99-5C0A-4F85-92EA-940D3DF3148D</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -183,7 +99,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>FEFFA97C-13A5-48EE-9020-363834D91877.xcactivitylog</string>
+			<string>E80B7B99-5C0A-4F85-92EA-940D3DF3148D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -194,13 +110,97 @@
 			<key>signature</key>
 			<string>Pods-SelfAwareness-bnfalwslcpbvxvcqfmjulxyfhisx</string>
 			<key>timeStartedRecording</key>
-			<real>645120041.02723598</real>
+			<real>647815178.76711595</real>
 			<key>timeStoppedRecording</key>
-			<real>645120041.04955006</real>
+			<real>647815178.79488897</real>
 			<key>title</key>
 			<string>Build target Pods-SelfAwareness</string>
 			<key>uniqueIdentifier</key>
-			<string>FEFFA97C-13A5-48EE-9020-363834D91877</string>
+			<string>E80B7B99-5C0A-4F85-92EA-940D3DF3148D</string>
+		</dict>
+		<key>EC72B125-2DB6-463C-8E73-093C231157D8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>EC72B125-2DB6-463C-8E73-093C231157D8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Pods-SelfAwareness_WatchKit_Extension-bnfalwslcpbvxvcqfmjulxyfhisx</string>
+			<key>timeStartedRecording</key>
+			<real>647814430.89724302</real>
+			<key>timeStoppedRecording</key>
+			<real>647814432.23017204</real>
+			<key>title</key>
+			<string>Build target Pods-SelfAwareness WatchKit Extension</string>
+			<key>uniqueIdentifier</key>
+			<string>EC72B125-2DB6-463C-8E73-093C231157D8</string>
+		</dict>
+		<key>F7956F83-6E0C-4DD5-B380-B90ED4293BA1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>F7956F83-6E0C-4DD5-B380-B90ED4293BA1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Pods-SelfAwareness_WatchKit_App-bnfalwslcpbvxvcqfmjulxyfhisx</string>
+			<key>timeStartedRecording</key>
+			<real>647815178.76749802</real>
+			<key>timeStoppedRecording</key>
+			<real>647815178.78911495</real>
+			<key>title</key>
+			<string>Build target Pods-SelfAwareness WatchKit App</string>
+			<key>uniqueIdentifier</key>
+			<string>F7956F83-6E0C-4DD5-B380-B90ED4293BA1</string>
+		</dict>
+		<key>F7B4841E-2791-4946-A338-BB34BD66511D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>F7B4841E-2791-4946-A338-BB34BD66511D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>ViewAnimator-bnfalwslcpbvxvcqfmjulxyfhisx</string>
+			<key>timeStartedRecording</key>
+			<real>647816531.233567</real>
+			<key>timeStoppedRecording</key>
+			<real>647816531.23372102</real>
+			<key>title</key>
+			<string>Build target ViewAnimator</string>
+			<key>uniqueIdentifier</key>
+			<string>F7B4841E-2791-4946-A338-BB34BD66511D</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

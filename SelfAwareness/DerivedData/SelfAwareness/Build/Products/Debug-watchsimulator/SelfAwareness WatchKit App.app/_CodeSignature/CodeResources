@@ -4,29 +4,37 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		IlWhkE1PrCbfzs52HK3r5XqwUAQ=
+		</data>
 		<key>Base.lproj/Interface.plist</key>
 		<data>
-		eR0LSB9gtcsVrog4Ukq5pue9Qes=
+		7EXg2GDpBcZ/r4NMo1PyUHybDxM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zV2YttZ2yMKMJjs+33Nh0TIDEdg=
+		K/lMqkOcatmGF8w4EGHEHVifGLw=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>PlugIns/SelfAwareness WatchKit Extension.appex/Assets.car</key>
+		<data>
+		tUL21Xs+uPx5p2/ZLS9EKnsZVLc=
+		</data>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/Info.plist</key>
 		<data>
-		HhrVgztBjccC/YnaKb8KU/8ok64=
+		4qK/SUx/u8yJv+5yWxL6IQpEFTw=
 		</data>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/SelfAwareness WatchKit Extension</key>
 		<data>
-		mwoi+zoGuAFnrvzy+ffCV0S9bmo=
+		cMgcek8HEP0rByOsJA8rbyAIEMc=
 		</data>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/_CodeSignature/CodeResources</key>
 		<data>
-		CJmAjpW+7LZ1WskyJTPjbFUK6/U=
+		t7NqYcAVvudKg/E9ApwLyjVANW4=
 		</data>
 		<key>_WatchKitStub/WK</key>
 		<data>
@@ -35,48 +43,70 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IlWhkE1PrCbfzs52HK3r5XqwUAQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			IpPGDcKAJ1+nzyewANJQhMr5O2aRQz7UKjTQ09MHgGU=
+			</data>
+		</dict>
 		<key>Base.lproj/Interface.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eR0LSB9gtcsVrog4Ukq5pue9Qes=
+			7EXg2GDpBcZ/r4NMo1PyUHybDxM=
 			</data>
 			<key>hash2</key>
 			<data>
-			s266/l90pSTTGN/CU30v4ypmqpTWxkClxYcyLIZmOqo=
+			VtQ7hBRu7lGK+DtZj1XLRh8uY+3m7ATbUJyEOqxLcxc=
+			</data>
+		</dict>
+		<key>PlugIns/SelfAwareness WatchKit Extension.appex/Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tUL21Xs+uPx5p2/ZLS9EKnsZVLc=
+			</data>
+			<key>hash2</key>
+			<data>
+			kxIrZlCFbBm/CjVcseBUucHjZjZy5mMkMKpNI5B0Zt8=
 			</data>
 		</dict>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HhrVgztBjccC/YnaKb8KU/8ok64=
+			4qK/SUx/u8yJv+5yWxL6IQpEFTw=
 			</data>
 			<key>hash2</key>
 			<data>
-			hFfsH4Z+rlpJF2XeUfy0cz5foqsMHFmN/R/LPFTsFGI=
+			xh6iXLYUwnlol7kympwh/2ZlEeU9YEiDyAbImv8KjRM=
 			</data>
 		</dict>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/SelfAwareness WatchKit Extension</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mwoi+zoGuAFnrvzy+ffCV0S9bmo=
+			cMgcek8HEP0rByOsJA8rbyAIEMc=
 			</data>
 			<key>hash2</key>
 			<data>
-			79NEdyjJFd6ob8OKanIJsp/VFnQ546rgXPNnlgB31+Y=
+			qJ14EgFizyVhyf1CG/CIUmJlpNnd3e8qUCuzaXSxVeI=
 			</data>
 		</dict>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CJmAjpW+7LZ1WskyJTPjbFUK6/U=
+			t7NqYcAVvudKg/E9ApwLyjVANW4=
 			</data>
 			<key>hash2</key>
 			<data>
-			sVD5/yEkbfvfZ+f1lIzwm6ZvO78t0IXVJArhEv1LFbo=
+			VZJcQu3zCwUocT0cyzvDsDtrs5wDUpLfpt0sstcJZ/w=
 			</data>
 		</dict>
 		<key>_WatchKitStub/WK</key>

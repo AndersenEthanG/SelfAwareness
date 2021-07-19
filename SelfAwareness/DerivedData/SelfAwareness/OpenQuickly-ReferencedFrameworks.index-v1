@@ -4,9 +4,9 @@
 <array>
 	<string>WatchKit</string>
 	<string>UserNotifications</string>
-	<string>WatchConnectivity</string>
-	<string>CoreData</string>
 	<string>ClockKit</string>
+	<string>CoreData</string>
+	<string>WatchConnectivity</string>
 	<string>CloudKit</string>
 	<string>UIKit</string>
 	<string>Foundation</string>

@@ -4,29 +4,37 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		IlWhkE1PrCbfzs52HK3r5XqwUAQ=
+		</data>
 		<key>Base.lproj/Interface.plist</key>
 		<data>
-		eR0LSB9gtcsVrog4Ukq5pue9Qes=
+		qU995OOWojiJjn4EuIrtM4loZwk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		e7DO+BQIm0OZAHZ71lKGdSWiCOo=
+		KWmzTiXdCgxz8lK4C6za6kux7X4=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>PlugIns/SelfAwareness WatchKit Extension.appex/Assets.car</key>
+		<data>
+		tUL21Xs+uPx5p2/ZLS9EKnsZVLc=
+		</data>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/Info.plist</key>
 		<data>
-		jcbjqVwttGFu6O2iPNDtWcZWycA=
+		2dHAsI5oERaTPadSvEHCiZx2s5o=
 		</data>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/SelfAwareness WatchKit Extension</key>
 		<data>
-		NpvSYVe7htnb+KT36Jk6wk3k/vo=
+		dtE9r1qk6agD0uaPasD18KoqplE=
 		</data>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/_CodeSignature/CodeResources</key>
 		<data>
-		fbWyN8Pw/1RljCDsszadmWAoFrw=
+		YB82WKvpHu2JBDm66xcw2L9mZwg=
 		</data>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/embedded.mobileprovision</key>
 		<data>
@@ -43,48 +51,70 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IlWhkE1PrCbfzs52HK3r5XqwUAQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			IpPGDcKAJ1+nzyewANJQhMr5O2aRQz7UKjTQ09MHgGU=
+			</data>
+		</dict>
 		<key>Base.lproj/Interface.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eR0LSB9gtcsVrog4Ukq5pue9Qes=
+			qU995OOWojiJjn4EuIrtM4loZwk=
 			</data>
 			<key>hash2</key>
 			<data>
-			s266/l90pSTTGN/CU30v4ypmqpTWxkClxYcyLIZmOqo=
+			vXsTmAV03Wzs/vINoPY3V+TO03LpVmOPQx+hwk4VQdU=
+			</data>
+		</dict>
+		<key>PlugIns/SelfAwareness WatchKit Extension.appex/Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tUL21Xs+uPx5p2/ZLS9EKnsZVLc=
+			</data>
+			<key>hash2</key>
+			<data>
+			kxIrZlCFbBm/CjVcseBUucHjZjZy5mMkMKpNI5B0Zt8=
 			</data>
 		</dict>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jcbjqVwttGFu6O2iPNDtWcZWycA=
+			2dHAsI5oERaTPadSvEHCiZx2s5o=
 			</data>
 			<key>hash2</key>
 			<data>
-			DixwFEmpomuBxPEwxbDejpOBXumd+STkBOU6WQo0wsI=
+			l2tjKaseWP3h1V2TkaX/Y3WWn+bYNQodsAASIQUEtZ0=
 			</data>
 		</dict>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/SelfAwareness WatchKit Extension</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NpvSYVe7htnb+KT36Jk6wk3k/vo=
+			dtE9r1qk6agD0uaPasD18KoqplE=
 			</data>
 			<key>hash2</key>
 			<data>
-			PZHIJkSU9wEuTnIE1xmqRH8dia1zzbsyC+GZZJNX9u8=
+			m5SumW0OkxAVf9kDE4QwH49CKvtS7yjw0en6GOvOhJs=
 			</data>
 		</dict>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fbWyN8Pw/1RljCDsszadmWAoFrw=
+			YB82WKvpHu2JBDm66xcw2L9mZwg=
 			</data>
 			<key>hash2</key>
 			<data>
-			9USEkrI+rdTBcumT30o9/6VEin8Zep0ORs3GV91D3vI=
+			IqOHgAWP+vlyh/SYM+YcxQ7IAHN8jDj8nsq2B3mNMg0=
 			</data>
 		</dict>
 		<key>PlugIns/SelfAwareness WatchKit Extension.appex/embedded.mobileprovision</key>

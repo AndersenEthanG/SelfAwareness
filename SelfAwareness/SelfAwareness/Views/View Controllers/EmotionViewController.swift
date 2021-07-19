@@ -28,23 +28,32 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
     // End of Basic Watch Connectivity functions
     
     
+    // Landing pad for the watch message
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
         print("Received user info from Watch!")
         watchToPhoneUpdate(message: userInfo)
     }
     
+    // This is the function to create an emotion from the watch data
     func watchToPhoneUpdate(message: [String : Any]) {
         print(message)
         let watchEmotionName = message["emotionName"]
         let watchEmotionLevel = message["emotionLevel"]
         let watchTimestamp = message["timestamp"]
         
-        EmotionController.sharedInstance.createEmotion(emotionName: watchEmotionName as! String, emotionLevel: watchEmotionLevel as! Int, timestamp: watchTimestamp as! Date)
-    }
+        EmotionController.sharedInstance.createEmotion(emotionName: watchEmotionName as! String, emotionLevel: watchEmotionLevel as! Int, timestamp: watchTimestamp as? Date ?? Date())
+    } // End of function watch to phone update
     
     
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var emotionPickerView: UIView!
+    
+    // Buttons
+    @IBOutlet weak var happyBtn: UIButton!
+    @IBOutlet weak var madBtn: UIButton!
+    @IBOutlet weak var sadBtn: UIButton!
+    @IBOutlet weak var afraidBtn: UIButton!
     
     
     // MARK: - Properties
@@ -59,9 +68,13 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // This makes the navigation item on the main page go away
+        self.navigationController?.overrideUserInterfaceStyle = .light
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         tableView.dataSource = self
         tableView.delegate = self
+        
+        // Gradients background
+        updateBackground()
         
         // Watch Connectivity support
         if WCSession.isSupported() {
@@ -76,7 +89,9 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.overrideUserInterfaceStyle = .light
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        updateBackground()
         tableView.reloadData()
     } // End of View Will Appear
     
@@ -110,6 +125,7 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
     // MARK: - Functions
     @objc func fetchEmotions() {
         EmotionController.sharedInstance.fetchEmotion()
+        tableView.reloadData()
     } // End of Function
     
     

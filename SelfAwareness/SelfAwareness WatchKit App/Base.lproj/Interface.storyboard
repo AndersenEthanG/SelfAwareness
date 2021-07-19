@@ -6,10 +6,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--interfaceVC-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SelfAwareness_WatchKit_Extension">
+                <controller identifier="interfaceVC" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SelfAwareness_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.5" alignment="left" id="KHs-gM-j25">
                             <items>
@@ -105,6 +105,11 @@
                 <controller identifier="messageVC" id="Fdy-7Z-jTy" customClass="MessageInterfaceController" customModule="SelfAwareness_WatchKit_Extension">
                     <items>
                         <label width="136" height="102" alignment="left" text="(messageLabel)" textAlignment="center" baselineAdjustment="alignCenters" id="bDu-p7-5vk"/>
+                        <button width="1" alignment="left" title="Return to Home" id="55O-rZ-98x">
+                            <connections>
+                                <action selector="returnToHomeBtn" destination="Fdy-7Z-jTy" id="UJb-RO-Vkj"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="messageLabel" destination="bDu-p7-5vk" id="Tkq-51-Wyl"/>

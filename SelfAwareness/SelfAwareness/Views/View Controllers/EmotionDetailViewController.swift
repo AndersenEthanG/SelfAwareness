@@ -23,12 +23,12 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var emotionNoteView: UITextView!
     
     
-    
     // MARK: - Properties
     var emotion: Emotion?
     var emotionLevel: Int = 0
     static var emotionName: String?
     var emotionNameCheck: String = ""
+    var noteText = ""
     
     
     // MARK: - Lifecycle
@@ -36,22 +36,39 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         // Make the navigation bar reappear (Main page makes it dissapear)
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        updateColors()
-        
+        self.navigationController?.overrideUserInterfaceStyle = .light
+        // This will override dark mode
+        overrideUserInterfaceStyle = .light
         // This is for dismissing the keyboard on touching
         self.emotionNoteView.delegate = self
+        
+        updateView()
+        
+        // Keyboard moving the screen up and down a little
+        NotificationCenter.default.addObserver(self, selector: #selector(EmotionDetailViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(EmotionDetailViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     } // End of Function viewDidLoad
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        overrideUserInterfaceStyle = .light
         updateView()
-        updateColors()
     }  // End of Function viewWillAppear
     
-    // This function makes the keyboard go away when typing around
+    // This function runs when the keyboard is touched
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if emotionNoteView.text.isEmpty {
+            updateNoteText()
+        }
         self.view.endEditing(true)
     } // End of Function
+    
+    func textViewDidBeginEditing(_ noteTextView: UITextView) {
+        if emotionNoteView.textColor == UIColor.darkGray {
+            emotionNoteView.text = nil
+            emotionNoteView.textColor = UIColor.black
+        }
+    } // End of Func
     
     
     // MARK: - Functions
@@ -64,7 +81,8 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         
         emotionNameLabel.text = "How \(emotionNameCheck) do you feel?"
         datePicker.date = emotion?.startTime ?? Date()
-        emotionNoteView.text = emotion?.note
+        emotionNoteViewUpdate()
+        updateColors()
         
         // Emoji Buttons
         let emotionEmojis = Emotion.emojisGrabber(emotion: emotionNameCheck)
@@ -78,67 +96,35 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         // Checking the emoji level for tints
         let emotionLevel = emotion?.emotionLevel
         emotionEmojiTintUpdate(emotionIndex: emotionLevel ?? 0)
-        
+        if emotion?.note != nil {
+            emotionNoteView.text = emotion?.note            
+        } else {
+            updateNoteText()
+        }
     } // End of Function
 
-    // This looks pretty bad, but I'm feeling lazy, and running out of time
-    func emotionEmojiTintUpdate(emotionIndex: Int16 = 5) {
-        switch emotionIndex {
-        case 0:
-            firstBtn.backgroundColor = .gray
-            secondBtn.backgroundColor = .white
-            thirdBtn.backgroundColor = .white
-            fourthBtn.backgroundColor = .white
-            fifthBtn.backgroundColor = .white
-        case 1:
-            firstBtn.backgroundColor = .white
-            secondBtn.backgroundColor = .gray
-            thirdBtn.backgroundColor = .white
-            fourthBtn.backgroundColor = .white
-            fifthBtn.backgroundColor = .white
-        case 2:
-            firstBtn.backgroundColor = .white
-            secondBtn.backgroundColor = .white
-            thirdBtn.backgroundColor = .gray
-            fourthBtn.backgroundColor = .white
-            fifthBtn.backgroundColor = .white
-        case 3:
-            firstBtn.backgroundColor = .white
-            secondBtn.backgroundColor = .white
-            thirdBtn.backgroundColor = .white
-            fourthBtn.backgroundColor = .gray
-            fifthBtn.backgroundColor = .white
-        case 4:
-            firstBtn.backgroundColor = .white
-            secondBtn.backgroundColor = .white
-            thirdBtn.backgroundColor = .white
-            fourthBtn.backgroundColor = .white
-            fifthBtn.backgroundColor = .gray
-        default:
-            firstBtn.backgroundColor = .white
-            secondBtn.backgroundColor = .white
-            thirdBtn.backgroundColor = .white
-            fourthBtn.backgroundColor = .white
-            fifthBtn.backgroundColor = .white
+    // Update Note text
+    func updateNoteText() {
+        if emotionNoteView.text == "" {
+            emotionNoteView.text = "What changed?"
+            emotionNoteView.textColor = UIColor.darkGray
+        } else {
+            emotionNoteView.text = emotion?.note
         }
     } // End of Function
     
-    // This will update the background color based on the emotion
-    func updateColors() {
-        let color: String = emotionNameCheck
-        switch color {
-        case "happy":
-            self.view.backgroundColor = UIColor.yellow
-        case "mad":
-            self.view.backgroundColor = UIColor.red
-        case "sad":
-            self.view.backgroundColor = UIColor.blue
-        case "afraid":
-            self.view.backgroundColor = UIColor.purple
-        default:
-            self.view.backgroundColor = UIColor.white
+    // Keyboard scooting the screen stuff
+    // Other Keyboard hide stuff
+    @objc func keyboardWillShow(notification: NSNotification) {
+        guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
         }
-    } // End of Function
+        self.view.frame.origin.y = 0 - (keyboardSize.height / 2)
+    } // End of Function keyboard will show
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        self.view.frame.origin.y = 0
+    } // End of Keyboard will hide Function
     
     
     // MARK: - Actions
@@ -146,29 +132,24 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     // Also updates the emotion strength data
     // TODO - Hightlight the one that you selected in some way
     @IBAction func firstBtnTap(_ sender: Any) {
-        print("First Phone button tapped")
         emotionLevel = 0
         emotionEmojiTintUpdate(emotionIndex: 0)
     }
     @IBAction func secondBtnTap(_ sender: Any) {
         emotionLevel = 1
         emotionEmojiTintUpdate(emotionIndex: 1)
-        
     }
     @IBAction func thirdBtnTap(_ sender: Any) {
         emotionLevel = 2
         emotionEmojiTintUpdate(emotionIndex: 2)
-        
     }
     @IBAction func fourthBtnTap(_ sender: Any) {
         emotionLevel = 3
         emotionEmojiTintUpdate(emotionIndex: 3)
-        
     }
     @IBAction func fifthBtnTap(_ sender: Any) {
         emotionLevel = 4
         emotionEmojiTintUpdate(emotionIndex: 4)
-        
     }
     
     @IBAction func saveBtnTap(_ sender: Any) {
@@ -191,6 +172,12 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         }
         // Pop View controller
         navigationController?.popViewController(animated: true)
-    }
+    } // End of Save Button
+    
+    func emotionNoteViewUpdate() {
+        emotionNoteView.layer.borderWidth = 2
+        emotionNoteView.layer.borderColor = UIColor.black.cgColor
+        emotionNoteView.layer.cornerRadius = 10
+    } // End of Function
     
 } // End of Class

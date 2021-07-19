@@ -77,22 +77,22 @@ class EmotionInterfaceController: WKInterfaceController, WCSessionDelegate {
         pushController(withName: "messageVC", context: nil)
     }
     @IBAction func secondBtnTap() {
-        message = ["emotionName" : emotionName, "emotionLevel" : 1]
+        message = ["emotionName" : emotionName, "emotionLevel" : 1, "timestamp" : Date()]
         sendMessage()
         pushController(withName: "messageVC", context: nil)
     }
     @IBAction func thirdBtnTap() {
-        message = ["emotionName" : emotionName, "emotionLevel" : 2]
+        message = ["emotionName" : emotionName, "emotionLevel" : 2, "timestamp" : Date()]
         sendMessage()
         pushController(withName: "messageVC", context: nil)
     }
     @IBAction func fourthBtnTap() {
-        message = ["emotionName" : emotionName, "emotionLevel" : 3]
+        message = ["emotionName" : emotionName, "emotionLevel" : 3, "timestamp" : Date()]
         sendMessage()
         pushController(withName: "messageVC", context: nil)
     }
     @IBAction func fifthBtnTap() {
-        message = ["emotionName" : emotionName, "emotionLevel" : 4]
+        message = ["emotionName" : emotionName, "emotionLevel" : 4, "timestamp" : Date()]
         sendMessage()
         pushController(withName: "messageVC", context: nil)
     }

@@ -4,9 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		NLFW8nXC1pJjt2RIrMs+5xYVRU0=
+		</data>
+		<key>Assets.car</key>
+		<data>
+		Ru7SGE7RyZe9g0x8LQjl3yr0T80=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		mbn9bKKPLuvXB8Jq8JYM+0gDZ10=
+		uyFG4Vlg5uXvdkAmV6d32HY/jQ0=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,27 +22,27 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		vdOxLAvYZkaqQBdFv8x50Ukpvxc=
+		FwWF9AO3PjU2gHi7l7RmR/zamek=
 		</data>
 		<key>Base.lproj/Main.storyboardc/64S-fO-zb0-view-7hR-S4-XKL.nib</key>
 		<data>
-		mhZDqkuOSxLHT7XxD0wIvFdYnbs=
+		4peTCfjX94Wj4OXoU44uRTUOWTY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		LtYM/aaz52CzwpCNR3ibZpLpd38=
+		siDqg2fN+deZwRZOwkGm9RIpASc=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-NKS-HO-h6a.nib</key>
 		<data>
-		s1MUDhZ4onWcuDoPE3oZ7Ckgdec=
+		9QolY+BHw5WGs+WsNDilJoLedmU=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-64S-fO-zb0.nib</key>
 		<data>
-		DUVHAwU3MZ0DImGIJYIlXgak3Vo=
+		vnerV0Iyov0jPkMwvfG2V/FQ/vM=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Urh-p5-YTq-view-Q0L-Oa-0pF.nib</key>
 		<data>
-		7rmQg7pUa+UBfzeuRlYsk2GMHDU=
+		AT+BqqcsTb4pu/Ot5xBp5eEoXQw=
 		</data>
 		<key>EmotionManager.momd/EmotionManager.mom</key>
 		<data>
@@ -46,52 +54,60 @@
 		</data>
 		<key>Frameworks/ViewAnimator.framework/Info.plist</key>
 		<data>
-		hFEEaxrXe/thHBDRR2KDf9QWZbg=
+		n8ax3n1XGknyvQYTKIIDw5GjEPU=
 		</data>
 		<key>Frameworks/ViewAnimator.framework/ViewAnimator</key>
 		<data>
-		Aj/sShdemqrGwkSFRLGrfDvPEm8=
+		Fm3hXYXChrASpijHTVwyNHAP9oI=
 		</data>
 		<key>Frameworks/ViewAnimator.framework/_CodeSignature/CodeResources</key>
 		<data>
-		N4xuY/6q/jJfhb4y6fbb8JGW7TE=
+		+6QU/JJJqn1qNoEKRclMg7b7xns=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oB/iBiqW5ezlb4aT6HjROzeF2zE=
+		6RRGCqLRSkbHNLOt87AHc1yAHLU=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>Watch/SelfAwareness WatchKit App.app/Assets.car</key>
+		<data>
+		IlWhkE1PrCbfzs52HK3r5XqwUAQ=
+		</data>
 		<key>Watch/SelfAwareness WatchKit App.app/Base.lproj/Interface.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eR0LSB9gtcsVrog4Ukq5pue9Qes=
+			qU995OOWojiJjn4EuIrtM4loZwk=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Watch/SelfAwareness WatchKit App.app/Info.plist</key>
 		<data>
-		e7DO+BQIm0OZAHZ71lKGdSWiCOo=
+		KWmzTiXdCgxz8lK4C6za6kux7X4=
 		</data>
 		<key>Watch/SelfAwareness WatchKit App.app/PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>Watch/SelfAwareness WatchKit App.app/PlugIns/SelfAwareness WatchKit Extension.appex/Assets.car</key>
+		<data>
+		tUL21Xs+uPx5p2/ZLS9EKnsZVLc=
+		</data>
 		<key>Watch/SelfAwareness WatchKit App.app/PlugIns/SelfAwareness WatchKit Extension.appex/Info.plist</key>
 		<data>
-		jcbjqVwttGFu6O2iPNDtWcZWycA=
+		2dHAsI5oERaTPadSvEHCiZx2s5o=
 		</data>
 		<key>Watch/SelfAwareness WatchKit App.app/PlugIns/SelfAwareness WatchKit Extension.appex/SelfAwareness WatchKit Extension</key>
 		<data>
-		NpvSYVe7htnb+KT36Jk6wk3k/vo=
+		dtE9r1qk6agD0uaPasD18KoqplE=
 		</data>
 		<key>Watch/SelfAwareness WatchKit App.app/PlugIns/SelfAwareness WatchKit Extension.appex/_CodeSignature/CodeResources</key>
 		<data>
-		fbWyN8Pw/1RljCDsszadmWAoFrw=
+		YB82WKvpHu2JBDm66xcw2L9mZwg=
 		</data>
 		<key>Watch/SelfAwareness WatchKit App.app/PlugIns/SelfAwareness WatchKit Extension.appex/embedded.mobileprovision</key>
 		<data>
@@ -99,11 +115,11 @@
 		</data>
 		<key>Watch/SelfAwareness WatchKit App.app/SelfAwareness WatchKit App</key>
 		<data>
-		3JMayUN+YyOpDLnvxQUEk/g+5HE=
+		d4jAR+fuarehLUAn/VX8ms74Zbc=
 		</data>
 		<key>Watch/SelfAwareness WatchKit App.app/_CodeSignature/CodeResources</key>
 		<data>
-		W/NP3owgjTR7Rxr4hrMS8dU8a3U=
+		ZEqEfsmK8oWCpU5KfwsR8DYe0gs=
 		</data>
 		<key>Watch/SelfAwareness WatchKit App.app/_WatchKitStub/WK</key>
 		<data>
@@ -120,11 +136,25 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CennkGKJx8r55q6nhnwbBJgq0d013BgcwegfyXqGHiY=
+			</data>
+		</dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M+n0ftXMd+wg+LtPocgYHqlbrwfkiC3AITBYHWXk60Q=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z0MIpyPTNegqFkURTTySb9VDU0qZva50yqA2VM1qij0=
+			B1M7HVYWHINYWq2NfbMy3btDtkFIJ086W6AZ2Ey2PkY=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -138,42 +168,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ol/UqQyfzmud8Fszv+bhWFWiqjmH3Y+EULsRqLPkB4=
+			UXFnb6E219WTmOAft6qO0CiOeg8F7FpGmGzD/yBD1Vk=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/64S-fO-zb0-view-7hR-S4-XKL.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			39sCsVct5TDEvqlidbE2Si3YYh7MaAdI3PIUmQvrhCI=
+			kTgzba+HTo8HGLWu9oVqMFwMLqOmvKJMF9/78GO9CJc=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k2qNM14A3VwdDxvas0PEIXKD1fWx8k9O4IREcIcti2I=
+			PJrgKOulicwQxFvqiOREGp1MLpdoTg5/4X8XcKxt+cI=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-NKS-HO-h6a.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zEQsBt3m9iL52nQ2vSpDAJvzKTjWR2gm1cK6mPErSgI=
+			8c6LTOgptQqXlJEjuqO9t3WmzqZQYEqiy44R8RhkiEU=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-64S-fO-zb0.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9GtGF6zImROl7yg2vbc0DLB3dd2gEstYOzqp59iiFo0=
+			7DTX7qcNIfCHkNrL0vnUCM/O5D7gwt1/SDvBGSkh76w=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Urh-p5-YTq-view-Q0L-Oa-0pF.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MoiSHMTiA+B0FRU6GiNZ9PVR6rUfkfh81wwY/3nIdZE=
+			BLivuExII4B6yqRPY3D1MXO+ywNCVuJUCdtW35sUa4o=
 			</data>
 		</dict>
 		<key>EmotionManager.momd/EmotionManager.mom</key>
@@ -194,28 +224,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jrg6xIfNUkCIVMpX45ag3Fly5d6d8tO7GpSFPYTFSJg=
+			GJyP3kQ/GjeWj/wmCUw7MmB+woRBjCNhJ4okcPzgzkY=
 			</data>
 		</dict>
 		<key>Frameworks/ViewAnimator.framework/ViewAnimator</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xrxs90WOKitbGYtMbPIbeBM+CsK/BKnjv5FMWqfc8rA=
+			3NL087/lkBTSveVXhYVXJgBbMVFMq4vRSQDMg6KSZZg=
 			</data>
 		</dict>
 		<key>Frameworks/ViewAnimator.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CSPlABgWT6cFfeMdTD0KW7M5Q7o4YQkDhs0PZSCE050=
+			wcr5KXWrRv2jkV6aksJxe66EhrfsfFULGBhEX+hDF9U=
+			</data>
+		</dict>
+		<key>Watch/SelfAwareness WatchKit App.app/Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IpPGDcKAJ1+nzyewANJQhMr5O2aRQz7UKjTQ09MHgGU=
 			</data>
 		</dict>
 		<key>Watch/SelfAwareness WatchKit App.app/Base.lproj/Interface.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s266/l90pSTTGN/CU30v4ypmqpTWxkClxYcyLIZmOqo=
+			vXsTmAV03Wzs/vINoPY3V+TO03LpVmOPQx+hwk4VQdU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -224,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			saMNJshijgOhAR6uqy0E3XZfxmuYgnMu14bVQGyZYiQ=
+			hksV4lQwymL449hIPTfHZ+PwYRnC8qaiFdI4FT8laHg=
 			</data>
 		</dict>
 		<key>Watch/SelfAwareness WatchKit App.app/PkgInfo</key>
@@ -234,25 +271,32 @@
 			glAhkclISwTWhTdPmHmgBmBpxJuKyuegSwHTjQfo7KA=
 			</data>
 		</dict>
+		<key>Watch/SelfAwareness WatchKit App.app/PlugIns/SelfAwareness WatchKit Extension.appex/Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kxIrZlCFbBm/CjVcseBUucHjZjZy5mMkMKpNI5B0Zt8=
+			</data>
+		</dict>
 		<key>Watch/SelfAwareness WatchKit App.app/PlugIns/SelfAwareness WatchKit Extension.appex/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DixwFEmpomuBxPEwxbDejpOBXumd+STkBOU6WQo0wsI=
+			l2tjKaseWP3h1V2TkaX/Y3WWn+bYNQodsAASIQUEtZ0=
 			</data>
 		</dict>
 		<key>Watch/SelfAwareness WatchKit App.app/PlugIns/SelfAwareness WatchKit Extension.appex/SelfAwareness WatchKit Extension</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PZHIJkSU9wEuTnIE1xmqRH8dia1zzbsyC+GZZJNX9u8=
+			m5SumW0OkxAVf9kDE4QwH49CKvtS7yjw0en6GOvOhJs=
 			</data>
 		</dict>
 		<key>Watch/SelfAwareness WatchKit App.app/PlugIns/SelfAwareness WatchKit Extension.appex/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9USEkrI+rdTBcumT30o9/6VEin8Zep0ORs3GV91D3vI=
+			IqOHgAWP+vlyh/SYM+YcxQ7IAHN8jDj8nsq2B3mNMg0=
 			</data>
 		</dict>
 		<key>Watch/SelfAwareness WatchKit App.app/PlugIns/SelfAwareness WatchKit Extension.appex/embedded.mobileprovision</key>
@@ -266,14 +310,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FjKBjEa0bZb7QM4rVbmOxGbPxn56AjCd7udDy+ALTak=
+			BwRdWtENxNu+ymTOC1j9tyNW5GrvWI13FK7YKAZY5zM=
 			</data>
 		</dict>
 		<key>Watch/SelfAwareness WatchKit App.app/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fmzpNp4qD7ZJ3hLvdnaLqf3zYUK32I9NGh9S4H8qAsk=
+			dR1rGcWVEXwMz8EKE6JFMVUAdOApuST9rDCNDh6qzKY=
 			</data>
 		</dict>
 		<key>Watch/SelfAwareness WatchKit App.app/_WatchKitStub/WK</key>

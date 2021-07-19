@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>386D1504-4830-4F85-941A-218446898B2E</key>
+		<key>8DF91662-477D-455F-930B-C40F0DED005F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,13 +15,13 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>386D1504-4830-4F85-941A-218446898B2E.xcactivitylog</string>
+			<string>8DF91662-477D-455F-930B-C40F0DED005F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>E</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>SelfAwareness project</string>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Build SelfAwareness</string>
 			<key>timeStartedRecording</key>
-			<real>645120039.86074305</real>
+			<real>647818371.08571899</real>
 			<key>timeStoppedRecording</key>
-			<real>645120044.74168503</real>
+			<real>647818371.21386695</real>
 			<key>title</key>
 			<string>Build SelfAwareness</string>
 			<key>uniqueIdentifier</key>
-			<string>386D1504-4830-4F85-941A-218446898B2E</string>
+			<string>8DF91662-477D-455F-930B-C40F0DED005F</string>
 		</dict>
-		<key>E03C52E1-D5FB-425C-A985-3C4F12DC4117</key>
+		<key>C2E0BA8F-6F9C-40CE-81EE-CF791ECDFAC7</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>E03C52E1-D5FB-425C-A985-3C4F12DC4117.xcactivitylog</string>
+			<string>C2E0BA8F-6F9C-40CE-81EE-CF791ECDFAC7.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,13 +66,13 @@
 			<key>signature</key>
 			<string>Build SelfAwareness</string>
 			<key>timeStartedRecording</key>
-			<real>645061228.22239399</real>
+			<real>647816528.98483706</real>
 			<key>timeStoppedRecording</key>
-			<real>645061231.97030401</real>
+			<real>647816531.23847401</real>
 			<key>title</key>
 			<string>Build SelfAwareness</string>
 			<key>uniqueIdentifier</key>
-			<string>E03C52E1-D5FB-425C-A985-3C4F12DC4117</string>
+			<string>C2E0BA8F-6F9C-40CE-81EE-CF791ECDFAC7</string>
 		</dict>
 	</dict>
 </dict>

@@ -18,7 +18,6 @@ class MessageInterfaceController: WKInterfaceController {
     // MARK: - Lifecycle
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
         updateView()
     }
 
@@ -36,6 +35,12 @@ class MessageInterfaceController: WKInterfaceController {
     // MARK: - Functions
     func updateView() {
         messageLabel.setText("Emotion saved!")
+    } // End of Function
+    
+    
+    // MARK: - Actions
+    @IBAction func returnToHomeBtn() {
+        popToRootController()
     } // End of Function
     
     

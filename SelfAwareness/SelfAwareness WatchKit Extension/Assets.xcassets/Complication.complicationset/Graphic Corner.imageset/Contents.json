@@ -1,9 +1,21 @@
 {
   "images" : [
     {
+      "filename" : "AppIcon24x24@2x-1.png",
+      "idiom" : "watch",
+      "scale" : "2x",
+      "screen-width" : "<=145"
+    },
+    {
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">161"
+    },
+    {
+      "filename" : "AppIcon24x24@2x-2.png",
+      "idiom" : "watch",
+      "scale" : "2x",
+      "screen-width" : ">145"
     },
     {
       "idiom" : "watch",

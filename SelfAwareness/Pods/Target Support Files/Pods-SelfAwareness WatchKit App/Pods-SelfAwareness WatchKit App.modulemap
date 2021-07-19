@@ -1,6 +1,0 @@
-framework module Pods_SelfAwareness_WatchKit_App {
-  umbrella header "Pods-SelfAwareness WatchKit App-umbrella.h"
-
-  export *
-  module * { export * }
-}

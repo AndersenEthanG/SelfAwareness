@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,10 +34,8 @@
 		AA374D0B2669B51F000B0C84 /* EmojiGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA374D0A2669B51F000B0C84 /* EmojiGrabber.swift */; };
 		AA374D0D2669B8BA000B0C84 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA374D0C2669B8BA000B0C84 /* DateFormat.swift */; };
 		AA5BCC61266AB96C0055750F /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5BCC60266AB96C0055750F /* EmotionViewController.swift */; };
+		AA7B6A822673C820000B7E95 /* BackgroundColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B6A812673C820000B7E95 /* BackgroundColors.swift */; };
 		AAE19AD3266EE0510001E858 /* StringCapitalizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */; };
-		C2D957B98167E298732BB30B /* Pods_SelfAwareness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8486ECE240CD026B7BC1DB0E /* Pods_SelfAwareness.framework */; };
-		C46C134495D10CB5924E58AA /* Pods_SelfAwareness_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4690C23C65B46902020374 /* Pods_SelfAwareness_WatchKit_Extension.framework */; };
-		F54D0C7C54C3CA4B181AE449 /* Pods_SelfAwareness_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F99592285220D1152C0D87 /* Pods_SelfAwareness_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,10 +81,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1338B55F28FC9203232EF3E0 /* Pods-SelfAwareness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness.debug.xcconfig"; path = "Target Support Files/Pods-SelfAwareness/Pods-SelfAwareness.debug.xcconfig"; sourceTree = "<group>"; };
-		335EF6BEF88CBB73D6F91B6F /* Pods-SelfAwareness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness.release.xcconfig"; path = "Target Support Files/Pods-SelfAwareness/Pods-SelfAwareness.release.xcconfig"; sourceTree = "<group>"; };
-		8486ECE240CD026B7BC1DB0E /* Pods_SelfAwareness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfAwareness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93F99592285220D1152C0D87 /* Pods_SelfAwareness_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfAwareness_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA007780266943BC002346E1 /* Emotion+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Emotion+Convenience.swift"; sourceTree = "<group>"; };
 		AA007782266943C7002346E1 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		AA0077842669518D002346E1 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
@@ -120,12 +114,8 @@
 		AA374D0A2669B51F000B0C84 /* EmojiGrabber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiGrabber.swift; sourceTree = "<group>"; };
 		AA374D0C2669B8BA000B0C84 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
 		AA5BCC60266AB96C0055750F /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
+		AA7B6A812673C820000B7E95 /* BackgroundColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColors.swift; sourceTree = "<group>"; };
 		AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCapitalizing.swift; sourceTree = "<group>"; };
-		BBD59D92FA87CDAF5ACD1EC8 /* Pods-SelfAwareness WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-SelfAwareness WatchKit Extension/Pods-SelfAwareness WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		C6C8B8A72838E5C57E848D1B /* Pods-SelfAwareness WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-SelfAwareness WatchKit App/Pods-SelfAwareness WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
-		E4AE8ECF5F5D8652831A737E /* Pods-SelfAwareness WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-SelfAwareness WatchKit App/Pods-SelfAwareness WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
-		EF4690C23C65B46902020374 /* Pods_SelfAwareness_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfAwareness_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6AF904CA2AD2D6BAE0B8D91 /* Pods-SelfAwareness WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfAwareness WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-SelfAwareness WatchKit Extension/Pods-SelfAwareness WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +124,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA11D72626692C8700B35944 /* CloudKit.framework in Frameworks */,
-				C2D957B98167E298732BB30B /* Pods_SelfAwareness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +131,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C46C134495D10CB5924E58AA /* Pods_SelfAwareness_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +138,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F54D0C7C54C3CA4B181AE449 /* Pods_SelfAwareness_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +204,7 @@
 		AA007786266953B9002346E1 /* Extensions and Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				AA7B6A832673C994000B7E95 /* Custom Colors */,
 				AA0077842669518D002346E1 /* StringConstants.swift */,
 				AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */,
 				AA374D0A2669B51F000B0C84 /* EmojiGrabber.swift */,
@@ -233,7 +221,6 @@
 				AA11D70926692C7100B35944 /* SelfAwareness WatchKit Extension */,
 				AA11D6E326692C7000B35944 /* Products */,
 				AA11D72426692C8700B35944 /* Frameworks */,
-				D22375F2F697705AE6038DE1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,9 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				AA11D72526692C8700B35944 /* CloudKit.framework */,
-				8486ECE240CD026B7BC1DB0E /* Pods_SelfAwareness.framework */,
-				93F99592285220D1152C0D87 /* Pods_SelfAwareness_WatchKit_App.framework */,
-				EF4690C23C65B46902020374 /* Pods_SelfAwareness_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -313,17 +297,12 @@
 			path = "Custom Cells";
 			sourceTree = "<group>";
 		};
-		D22375F2F697705AE6038DE1 /* Pods */ = {
+		AA7B6A832673C994000B7E95 /* Custom Colors */ = {
 			isa = PBXGroup;
 			children = (
-				1338B55F28FC9203232EF3E0 /* Pods-SelfAwareness.debug.xcconfig */,
-				335EF6BEF88CBB73D6F91B6F /* Pods-SelfAwareness.release.xcconfig */,
-				E4AE8ECF5F5D8652831A737E /* Pods-SelfAwareness WatchKit App.debug.xcconfig */,
-				C6C8B8A72838E5C57E848D1B /* Pods-SelfAwareness WatchKit App.release.xcconfig */,
-				F6AF904CA2AD2D6BAE0B8D91 /* Pods-SelfAwareness WatchKit Extension.debug.xcconfig */,
-				BBD59D92FA87CDAF5ACD1EC8 /* Pods-SelfAwareness WatchKit Extension.release.xcconfig */,
+				AA7B6A812673C820000B7E95 /* BackgroundColors.swift */,
 			);
-			path = Pods;
+			path = "Custom Colors";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,12 +312,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA11D72026692C7200B35944 /* Build configuration list for PBXNativeTarget "SelfAwareness" */;
 			buildPhases = (
-				CF6ABBE18AAEAA5B6EE60A0F /* [CP] Check Pods Manifest.lock */,
 				AA11D6DE26692C7000B35944 /* Sources */,
 				AA11D6DF26692C7000B35944 /* Frameworks */,
 				AA11D6E026692C7000B35944 /* Resources */,
 				AA11D71F26692C7200B35944 /* Embed Watch Content */,
-				98CA0D7EC386DF9735E39C42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,7 +331,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA11D71C26692C7200B35944 /* Build configuration list for PBXNativeTarget "SelfAwareness WatchKit App" */;
 			buildPhases = (
-				07CCCDED33BE3D08713A2B7B /* [CP] Check Pods Manifest.lock */,
 				AA11D6F426692C7100B35944 /* Resources */,
 				AA11D71B26692C7200B35944 /* Embed App Extensions */,
 				EC5EE42C1899C04185C07001 /* Frameworks */,
@@ -373,7 +349,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA11D71826692C7200B35944 /* Build configuration list for PBXNativeTarget "SelfAwareness WatchKit Extension" */;
 			buildPhases = (
-				3BCF198DBB0A107522B7452C /* [CP] Check Pods Manifest.lock */,
 				AA11D70126692C7100B35944 /* Sources */,
 				AA11D70226692C7100B35944 /* Frameworks */,
 				AA11D70326692C7100B35944 /* Resources */,
@@ -457,92 +432,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		07CCCDED33BE3D08713A2B7B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SelfAwareness WatchKit App-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3BCF198DBB0A107522B7452C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SelfAwareness WatchKit Extension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		98CA0D7EC386DF9735E39C42 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SelfAwareness/Pods-SelfAwareness-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SelfAwareness/Pods-SelfAwareness-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SelfAwareness/Pods-SelfAwareness-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CF6ABBE18AAEAA5B6EE60A0F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SelfAwareness-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		AA11D6DE26692C7000B35944 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -551,6 +440,7 @@
 				AA5BCC61266AB96C0055750F /* EmotionViewController.swift in Sources */,
 				AA2BD7F12672B7B70037F2FB /* EmotionManager.xcdatamodeld in Sources */,
 				AA007783266943C7002346E1 /* CoreDataStack.swift in Sources */,
+				AA7B6A822673C820000B7E95 /* BackgroundColors.swift in Sources */,
 				AA0077852669518D002346E1 /* StringConstants.swift in Sources */,
 				AA374D082669B07A000B0C84 /* EmotionTableViewCell.swift in Sources */,
 				AAE19AD3266EE0510001E858 /* StringCapitalizing.swift in Sources */,
@@ -733,7 +623,6 @@
 		};
 		AA11D71926692C7200B35944 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6AF904CA2AD2D6BAE0B8D91 /* Pods-SelfAwareness WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -756,7 +645,6 @@
 		};
 		AA11D71A26692C7200B35944 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBD59D92FA87CDAF5ACD1EC8 /* Pods-SelfAwareness WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -780,7 +668,6 @@
 		};
 		AA11D71D26692C7200B35944 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4AE8ECF5F5D8652831A737E /* Pods-SelfAwareness WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -801,7 +688,6 @@
 		};
 		AA11D71E26692C7200B35944 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6C8B8A72838E5C57E848D1B /* Pods-SelfAwareness WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -823,7 +709,6 @@
 		};
 		AA11D72126692C7200B35944 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1338B55F28FC9203232EF3E0 /* Pods-SelfAwareness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -840,13 +725,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AA11D72226692C7200B35944 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 335EF6BEF88CBB73D6F91B6F /* Pods-SelfAwareness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -863,7 +747,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

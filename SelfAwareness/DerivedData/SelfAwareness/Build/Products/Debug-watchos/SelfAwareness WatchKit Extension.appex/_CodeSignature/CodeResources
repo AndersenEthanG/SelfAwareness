@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		tUL21Xs+uPx5p2/ZLS9EKnsZVLc=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		jcbjqVwttGFu6O2iPNDtWcZWycA=
+		2dHAsI5oERaTPadSvEHCiZx2s5o=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -15,6 +19,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tUL21Xs+uPx5p2/ZLS9EKnsZVLc=
+			</data>
+			<key>hash2</key>
+			<data>
+			kxIrZlCFbBm/CjVcseBUucHjZjZy5mMkMKpNI5B0Zt8=
+			</data>
+		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
 			<key>hash</key>
