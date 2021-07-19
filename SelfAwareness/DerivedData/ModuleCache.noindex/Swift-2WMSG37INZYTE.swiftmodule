@@ -1,0 +1,12 @@
+---
+path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/prebuilt-modules/7.4/Swift.swiftmodule/arm64_32-apple-watchos.swiftmodule'
+dependencies:
+  - mtime:           1622233362000000000
+    path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/prebuilt-modules/7.4/Swift.swiftmodule/arm64_32-apple-watchos.swiftmodule'
+    size:            12016432
+  - mtime:           1615874510000000000
+    path:            'usr/lib/swift/Swift.swiftmodule/arm64_32-apple-watchos.swiftinterface'
+    size:            1519966
+    sdk_relative:    true
+version:         1
+...

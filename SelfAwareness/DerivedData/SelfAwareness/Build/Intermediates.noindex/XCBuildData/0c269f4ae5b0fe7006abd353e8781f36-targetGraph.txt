@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+SelfAwareness WatchKit Extension in SelfAwareness
+SelfAwareness WatchKit App in SelfAwareness, depends on:
+SelfAwareness WatchKit Extension in SelfAwareness (explicit)
+SelfAwareness in SelfAwareness, depends on:
+SelfAwareness WatchKit App in SelfAwareness (explicit)

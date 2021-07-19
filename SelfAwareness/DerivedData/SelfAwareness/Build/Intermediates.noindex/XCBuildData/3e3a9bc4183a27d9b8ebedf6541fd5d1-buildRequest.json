@@ -1,0 +1,59 @@
+{
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "6175c986623ae9a9e595cabc56857eef8ed14a9179eba6f1c01a471f6da5034c"
+    },
+    {
+      "guid" : "6175c986623ae9a9e595cabc56857eefb05b89d7982b61cbdd2780c0ecf96ff7"
+    }
+  ],
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator14.5",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Build/Products",
+      "derivedDataPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone13,1",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "14.5",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "C0F47259-EB85-4E12-B2DB-97737759AB51",
+          "TARGET_DEVICE_MODEL" : "iPhone13,1",
+          "TARGET_DEVICE_OS_VERSION" : "14.5",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

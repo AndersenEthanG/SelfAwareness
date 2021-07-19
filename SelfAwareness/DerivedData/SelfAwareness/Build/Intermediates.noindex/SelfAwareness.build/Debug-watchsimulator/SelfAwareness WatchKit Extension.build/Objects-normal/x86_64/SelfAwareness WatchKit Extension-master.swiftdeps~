@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+options: "42d02216e6eaa0dcc03096a9a71fea8a"
+build_time: [1624291752, 956714000]
+inputs:
+  "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/SelfAwareness WatchKit Extension/NotificationController.swift": [1623348397, 934463646]
+  "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/SelfAwareness WatchKit Extension/View Controllers/MessageInterfaceController.swift": [1623452168, 914693076]
+  "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/SelfAwareness WatchKit Extension/ComplicationController.swift": [1623348397, 934090863]
+  "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/SelfAwareness WatchKit Extension/View Controllers/EmotionInterfaceController.swift": [1623942143, 566172108]
+  "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/SelfAwareness WatchKit Extension/ExtensionDelegate.swift": [1623348397, 934233397]
+  "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/SelfAwareness WatchKit Extension/View Controllers/InterfaceController.swift": [1623348397, 934883078]

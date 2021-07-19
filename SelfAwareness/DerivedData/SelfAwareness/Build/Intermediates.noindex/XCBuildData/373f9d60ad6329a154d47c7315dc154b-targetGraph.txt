@@ -1,0 +1,15 @@
+Target dependency graph (7 targets)
+Pods-SelfAwareness WatchKit Extension in Pods
+SelfAwareness WatchKit Extension in SelfAwareness, depends on:
+Pods-SelfAwareness WatchKit Extension in Pods (implicit dependency via file 'Pods_SelfAwareness_WatchKit_Extension.framework' in build phase 'Link Binary'
+Pods-SelfAwareness WatchKit App in Pods
+SelfAwareness WatchKit App in SelfAwareness, depends on:
+SelfAwareness WatchKit Extension in SelfAwareness (explicit)
+Pods-SelfAwareness WatchKit App in Pods (implicit dependency via file 'Pods_SelfAwareness_WatchKit_App.framework' in build phase 'Link Binary'
+ViewAnimator in Pods
+Pods-SelfAwareness in Pods, depends on:
+ViewAnimator in Pods (explicit)
+SelfAwareness in SelfAwareness, depends on:
+SelfAwareness WatchKit App in SelfAwareness (explicit)
+Pods-SelfAwareness in Pods (implicit dependency via file 'Pods_SelfAwareness.framework' in build phase 'Link Binary'
+ViewAnimator in Pods (implicit dependency via options '-framework ViewAnimator' in build setting 'OTHER_LDFLAGS'

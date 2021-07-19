@@ -1,0 +1,61 @@
+{
+  "buildCommand" : "prepareForIndexing",
+  "configuredTargets" : [
+    {
+      "guid" : "6175c986623ae9a9e595cabc56857eef8ed14a9179eba6f1c01a471f6da5034c"
+    },
+    {
+      "guid" : "6175c986623ae9a9e595cabc56857eefb05b89d7982b61cbdd2780c0ecf96ff7"
+    }
+  ],
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64e",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos14.5",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "armv4t",
+        "armv5",
+        "armv6",
+        "armv7",
+        "armv7f",
+        "armv7s",
+        "armv7k",
+        "arm64",
+        "arm64e"
+      ],
+      "targetArchitecture" : "arm64e"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Build/Products",
+      "derivedDataPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

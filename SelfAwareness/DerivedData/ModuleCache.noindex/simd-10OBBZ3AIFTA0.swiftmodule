@@ -1,0 +1,24 @@
+---
+path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/prebuilt-modules/7.4/simd.swiftmodule/armv7k-apple-watchos.swiftmodule'
+dependencies:
+  - mtime:           1622233397000000000
+    path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/watchos/prebuilt-modules/7.4/simd.swiftmodule/armv7k-apple-watchos.swiftmodule'
+    size:            564860
+  - mtime:           1615874510000000000
+    path:            'usr/lib/swift/Swift.swiftmodule/armv7k-apple-watchos.swiftinterface'
+    size:            1520060
+    sdk_relative:    true
+  - mtime:           1615874503000000000
+    path:            'usr/include/Darwin.apinotes'
+    size:            1133
+    sdk_relative:    true
+  - mtime:           1615874507000000000
+    path:            'usr/lib/swift/Darwin.swiftmodule/armv7k-apple-watchos.swiftinterface'
+    size:            24394
+    sdk_relative:    true
+  - mtime:           1615874510000000000
+    path:            'usr/lib/swift/simd.swiftmodule/armv7k-apple-watchos.swiftinterface'
+    size:            127286
+    sdk_relative:    true
+version:         1
+...

@@ -1,0 +1,60 @@
+{
+  "buildCommand" : "prepareForIndexing",
+  "configuredTargets" : [
+    {
+      "guid" : "6175c986623ae9a9e595cabc56857eefb05b89d7982b61cbdd2780c0ecf96ff7"
+    }
+  ],
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos14.5",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64v8",
+        "arm64",
+        "armv8"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Build/Products",
+      "derivedDataPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/Ethan/Desktop/DevMountain/Personal Capstone/Self Awareness Master/SelfAwareness/DerivedData/SelfAwareness/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone13,4",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "14.6",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "00008101-001A643011D8001E",
+          "TARGET_DEVICE_MODEL" : "iPhone13,4",
+          "TARGET_DEVICE_OS_VERSION" : "14.6",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphoneos"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
