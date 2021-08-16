@@ -32,6 +32,8 @@ class EmotionTableViewCell: UITableViewCell {
         let startTime = emotion?.startTime?.formatToString()
         let emotionNote = emotion?.note
         
+        darkModeUpdate()
+        
         emotionNoteLabel.text = emotionNote
         emotionTimeLabel.text = startTime
     } // End of Function

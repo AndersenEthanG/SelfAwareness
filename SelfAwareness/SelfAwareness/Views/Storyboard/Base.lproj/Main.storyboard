@@ -301,6 +301,7 @@
                         <outlet property="fifthBtn" destination="7TE-o3-oqu" id="Uo8-of-Pva"/>
                         <outlet property="firstBtn" destination="bEa-AY-hm9" id="r7j-ij-e1X"/>
                         <outlet property="fourthBtn" destination="dLh-5z-hhG" id="Zul-k3-o7J"/>
+                        <outlet property="saveBtn" destination="5f5-GO-FkY" id="May-Wu-Ggj"/>
                         <outlet property="secondBtn" destination="txB-gZ-mQo" id="kOO-2e-Xth"/>
                         <outlet property="thirdBtn" destination="ISl-MX-jPj" id="KzW-hz-uvb"/>
                     </connections>

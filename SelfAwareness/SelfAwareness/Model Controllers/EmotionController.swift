@@ -29,12 +29,6 @@ class EmotionController {
         // Enter in the new data, save the data
         let emotion = Emotion(emotionName: emotionName, emotionLevel: emotionLevel, note: emotionNote, timestamp: timestamp, startTime: startTime)
         
-        if emotion.note == "" {
-            emotion.note = ((emotion.emotionName?.capitalizingFirstLetter())! + " " + String(emotion.emotionLevel+1))
-        } else {
-            emotion.note = emotion.note
-        }
-        
         emotions.append(emotion)
         updateDB()
     } // End of Create function

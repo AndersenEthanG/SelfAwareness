@@ -21,7 +21,7 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var emotionNameLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var emotionNoteView: UITextView!
-    
+    @IBOutlet weak var saveBtn: UIBarButtonItem!
     
     // MARK: - Properties
     var emotion: Emotion?
@@ -36,12 +36,10 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         // Make the navigation bar reappear (Main page makes it dissapear)
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        self.navigationController?.overrideUserInterfaceStyle = .light
-        // This will override dark mode
-        overrideUserInterfaceStyle = .light
         // This is for dismissing the keyboard on touching
         self.emotionNoteView.delegate = self
         
+        saveBtn.isEnabled = false
         updateView()
         
         // Keyboard moving the screen up and down a little
@@ -51,7 +49,6 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        overrideUserInterfaceStyle = .light
         updateView()
     }  // End of Function viewWillAppear
     
@@ -67,6 +64,10 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         if emotionNoteView.textColor == UIColor.darkGray {
             emotionNoteView.text = nil
             emotionNoteView.textColor = UIColor.black
+        }
+        
+        if emotionNoteView.textColor == UIColor.lightGray {
+            emotionNoteView.textColor = UIColor.white
         }
     } // End of Func
     
@@ -96,20 +97,36 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         // Checking the emoji level for tints
         let emotionLevel = emotion?.emotionLevel
         emotionEmojiTintUpdate(emotionIndex: emotionLevel ?? 0)
-        if emotion?.note != nil {
+        if emotion?.note != "" {
             emotionNoteView.text = emotion?.note            
         } else {
             updateNoteText()
         }
+        
+        darkModeUpdate()
+        updateNoteText()
     } // End of Function
 
     // Update Note text
     func updateNoteText() {
         if emotionNoteView.text == "" {
             emotionNoteView.text = "What changed?"
-            emotionNoteView.textColor = UIColor.darkGray
+            
+            if traitCollection.userInterfaceStyle == .dark {
+                emotionNoteView.textColor = UIColor.lightGray
+            } else {
+                emotionNoteView.textColor = UIColor.darkGray
+            }
+            
         } else {
+            saveBtn.isEnabled = true
             emotionNoteView.text = emotion?.note
+            
+            if traitCollection.userInterfaceStyle == .dark {
+                emotionNoteView.textColor = UIColor.lightGray
+            } else {
+                emotionNoteView.textColor = UIColor.darkGray
+            }
         }
     } // End of Function
     
@@ -120,10 +137,15 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
             return
         }
         self.view.frame.origin.y = 0 - (keyboardSize.height / 2)
+        saveBtn.isEnabled = true
     } // End of Function keyboard will show
     
     @objc func keyboardWillHide(notification: NSNotification) {
         self.view.frame.origin.y = 0
+        
+        if emotionNoteView.text == emotion?.note {
+            saveBtn.isEnabled = false
+        }
     } // End of Keyboard will hide Function
     
     
@@ -132,22 +154,27 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     // Also updates the emotion strength data
     // TODO - Hightlight the one that you selected in some way
     @IBAction func firstBtnTap(_ sender: Any) {
+        saveBtn.isEnabled = true
         emotionLevel = 0
         emotionEmojiTintUpdate(emotionIndex: 0)
     }
     @IBAction func secondBtnTap(_ sender: Any) {
+        saveBtn.isEnabled = true
         emotionLevel = 1
         emotionEmojiTintUpdate(emotionIndex: 1)
     }
     @IBAction func thirdBtnTap(_ sender: Any) {
+        saveBtn.isEnabled = true
         emotionLevel = 2
         emotionEmojiTintUpdate(emotionIndex: 2)
     }
     @IBAction func fourthBtnTap(_ sender: Any) {
+        saveBtn.isEnabled = true
         emotionLevel = 3
         emotionEmojiTintUpdate(emotionIndex: 3)
     }
     @IBAction func fifthBtnTap(_ sender: Any) {
+        saveBtn.isEnabled = true
         emotionLevel = 4
         emotionEmojiTintUpdate(emotionIndex: 4)
     }
@@ -176,7 +203,13 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     
     func emotionNoteViewUpdate() {
         emotionNoteView.layer.borderWidth = 2
-        emotionNoteView.layer.borderColor = UIColor.black.cgColor
+        
+        if self.traitCollection.userInterfaceStyle == .dark {
+            emotionNoteView.layer.borderColor = UIColor.white.cgColor
+        } else {
+            emotionNoteView.layer.borderColor = UIColor.black.cgColor
+        }
+        
         emotionNoteView.layer.cornerRadius = 10
     } // End of Function
     

@@ -8,7 +8,7 @@
 import UIKit
 
 class CellColors {
-    static func getCellColorGradient(emotionName: String) -> UIColor {
+    static func getColor(emotionName: String) -> UIColor {
         var returnColorHex: String
         
         switch emotionName {
@@ -20,6 +20,14 @@ class CellColors {
             returnColorHex = "93bcf8 "
         case "afraid":
             returnColorHex = "b88ee0"
+        case "happyDark":
+            returnColorHex = "ada218"
+        case "madDark":
+            returnColorHex = "d2271f"
+        case "sadDark":
+            returnColorHex = "0053e2"
+        case "afraidDark":
+            returnColorHex = "7d1cc3"
         default:
             return .white
         }

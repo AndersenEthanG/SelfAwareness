@@ -37,30 +37,35 @@ extension EmotionDetailViewController {
         let gradient = CAGradientLayer()
         gradient.frame = view.frame
         let emotionColor = emotionNameCheck
+        var firstColor = UIColor.white.cgColor
+        
+        if self.traitCollection.userInterfaceStyle == .dark {
+            firstColor = UIColor.black.cgColor
+        }
         
         if emotionColor == "happy" {
             gradient.colors = [
-                UIColor.white.cgColor,
+                firstColor,
                 UIColor.systemYellow.cgColor
             ]
         } else if emotionColor == "mad" {
             gradient.colors = [
-                UIColor.white.cgColor,
+                firstColor,
                 UIColor.systemRed.cgColor
             ]
         } else if emotionColor == "sad" {
             gradient.colors = [
-                UIColor.white.cgColor,
+                firstColor,
                 UIColor.systemBlue.cgColor
             ]
         } else if emotionColor == "afraid" {
             gradient.colors = [
-                UIColor.white.cgColor,
+                firstColor,
                 UIColor.systemPurple.cgColor
             ]
         } else {
             gradient.colors = [
-                UIColor.white.cgColor,
+                firstColor,
                 UIColor.gray.cgColor
             ]
         }
@@ -69,8 +74,6 @@ extension EmotionDetailViewController {
         gradient.endPoint = CGPoint(x: 1, y: 1)
         
         self.view.layer.insertSublayer(gradient, at: 0)
-        
-        overrideUserInterfaceStyle = .light
     } // End of Function
     
     // This looks pretty bad, but I'm feeling lazy, and running out of time

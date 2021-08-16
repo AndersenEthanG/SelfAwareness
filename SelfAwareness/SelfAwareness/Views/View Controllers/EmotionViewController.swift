@@ -42,6 +42,8 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
         let watchTimestamp = message["timestamp"]
         
         EmotionController.sharedInstance.createEmotion(emotionName: watchEmotionName as! String, emotionLevel: watchEmotionLevel as! Int, timestamp: watchTimestamp as? Date ?? Date())
+        
+        tableView.reloadData()
     } // End of function watch to phone update
     
     
@@ -68,7 +70,6 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // This makes the navigation item on the main page go away
-        self.navigationController?.overrideUserInterfaceStyle = .light
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         tableView.dataSource = self
         tableView.delegate = self
@@ -79,6 +80,7 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
         updateBackground()
         */
         
+        darkModeUpdate()
         updateBtns()
         
         // Watch Connectivity support
@@ -94,11 +96,12 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.overrideUserInterfaceStyle = .light
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         // Depreciated
 //        updateBackground()
+        
         updateBtns()
+        darkModeUpdate()
         tableView.reloadData()
     } // End of View Will Appear
     
@@ -158,7 +161,12 @@ extension EmotionViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "emotionCell", for: indexPath) as? EmotionTableViewCell
         let emotion = EmotionController.sharedInstance.emotions[indexPath.row]
         
-        cell?.backgroundColor = CellColors.getCellColorGradient(emotionName: emotion.emotionName!)
+        if traitCollection.userInterfaceStyle == .light {
+            cell?.backgroundColor = CellColors.getColor(emotionName: emotion.emotionName!)
+        } else if traitCollection.userInterfaceStyle == .dark {
+            let emotionNameDark = (emotion.emotionName! + "Dark")
+            cell?.backgroundColor = CellColors.getColor(emotionName: emotionNameDark)
+        }
         
         cell?.emotion = emotion
         
