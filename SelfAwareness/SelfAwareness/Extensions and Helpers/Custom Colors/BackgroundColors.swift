@@ -7,6 +7,8 @@
 
 import UIKit
 
+/*
+// Depreciated
 extension EmotionViewController {
     
     func updateBackground() {
@@ -27,6 +29,7 @@ extension EmotionViewController {
     } // End of Function updateBackground
     
 } // End of Extension
+*/
 
 extension EmotionDetailViewController {
     

@@ -73,8 +73,13 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
         tableView.dataSource = self
         tableView.delegate = self
         
+        /*
+        // Depreciated
         // Gradients background
         updateBackground()
+        */
+        
+        updateBtns()
         
         // Watch Connectivity support
         if WCSession.isSupported() {
@@ -91,7 +96,9 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
         super.viewWillAppear(animated)
         self.navigationController?.overrideUserInterfaceStyle = .light
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-        updateBackground()
+        // Depreciated
+//        updateBackground()
+        updateBtns()
         tableView.reloadData()
     } // End of View Will Appear
     
@@ -150,6 +157,9 @@ extension EmotionViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "emotionCell", for: indexPath) as? EmotionTableViewCell
         let emotion = EmotionController.sharedInstance.emotions[indexPath.row]
+        
+        cell?.backgroundColor = CellColors.getCellColorGradient(emotionName: emotion.emotionName!)
+        
         cell?.emotion = emotion
         
         return cell ?? UITableViewCell()

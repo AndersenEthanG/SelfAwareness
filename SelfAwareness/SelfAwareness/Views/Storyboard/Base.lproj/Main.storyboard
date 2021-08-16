@@ -89,10 +89,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EdP-Dv-Bb9" userLabel="Emotion Stack View">
-                                                <rect key="frame" x="32" y="46.333333333333343" width="364" height="188"/>
+                                                <rect key="frame" x="0.0" y="46.333333333333343" width="428" height="188"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lM9-SF-iVX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="41"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="428" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Happy"/>
@@ -102,7 +102,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp6-0q-0ra">
-                                                        <rect key="frame" x="0.0" y="49" width="364" height="41"/>
+                                                        <rect key="frame" x="0.0" y="49" width="428" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Mad"/>
@@ -112,7 +112,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yc1-Ef-Vqq">
-                                                        <rect key="frame" x="0.0" y="98" width="364" height="41"/>
+                                                        <rect key="frame" x="0.0" y="98" width="428" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Sad"/>
@@ -122,7 +122,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fh8-Tg-b2r">
-                                                        <rect key="frame" x="0.0" y="146.99999999999997" width="364" height="41"/>
+                                                        <rect key="frame" x="0.0" y="146.99999999999997" width="428" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Afraid"/>
@@ -135,8 +135,8 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="EdP-Dv-Bb9" secondAttribute="trailing" constant="32" id="RL8-9p-guN"/>
-                                            <constraint firstItem="EdP-Dv-Bb9" firstAttribute="leading" secondItem="UUu-nQ-4ti" secondAttribute="leading" constant="32" id="Xx5-30-rYI"/>
+                                            <constraint firstAttribute="trailing" secondItem="EdP-Dv-Bb9" secondAttribute="trailing" id="RL8-9p-guN"/>
+                                            <constraint firstItem="EdP-Dv-Bb9" firstAttribute="leading" secondItem="UUu-nQ-4ti" secondAttribute="leading" id="Xx5-30-rYI"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>

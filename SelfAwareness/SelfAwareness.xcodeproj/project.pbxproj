@@ -33,6 +33,8 @@
 		AA374D082669B07A000B0C84 /* EmotionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA374D072669B07A000B0C84 /* EmotionTableViewCell.swift */; };
 		AA374D0B2669B51F000B0C84 /* EmojiGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA374D0A2669B51F000B0C84 /* EmojiGrabber.swift */; };
 		AA374D0D2669B8BA000B0C84 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA374D0C2669B8BA000B0C84 /* DateFormat.swift */; };
+		AA59B7B726CAF1D3004842DE /* CellColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B7B626CAF1D3004842DE /* CellColors.swift */; };
+		AA59B7B926CAF9D2004842DE /* UpdateTopBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B7B826CAF9D2004842DE /* UpdateTopBackground.swift */; };
 		AA5BCC61266AB96C0055750F /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5BCC60266AB96C0055750F /* EmotionViewController.swift */; };
 		AA7B6A822673C820000B7E95 /* BackgroundColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B6A812673C820000B7E95 /* BackgroundColors.swift */; };
 		AAE19AD3266EE0510001E858 /* StringCapitalizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */; };
@@ -113,6 +115,8 @@
 		AA374D072669B07A000B0C84 /* EmotionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionTableViewCell.swift; sourceTree = "<group>"; };
 		AA374D0A2669B51F000B0C84 /* EmojiGrabber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiGrabber.swift; sourceTree = "<group>"; };
 		AA374D0C2669B8BA000B0C84 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		AA59B7B626CAF1D3004842DE /* CellColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellColors.swift; sourceTree = "<group>"; };
+		AA59B7B826CAF9D2004842DE /* UpdateTopBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTopBackground.swift; sourceTree = "<group>"; };
 		AA5BCC60266AB96C0055750F /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
 		AA7B6A812673C820000B7E95 /* BackgroundColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColors.swift; sourceTree = "<group>"; };
 		AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCapitalizing.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 				AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */,
 				AA374D0A2669B51F000B0C84 /* EmojiGrabber.swift */,
 				AA374D0C2669B8BA000B0C84 /* DateFormat.swift */,
+				AA59B7B626CAF1D3004842DE /* CellColors.swift */,
 			);
 			path = "Extensions and Helpers";
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				AA7B6A812673C820000B7E95 /* BackgroundColors.swift */,
+				AA59B7B826CAF9D2004842DE /* UpdateTopBackground.swift */,
 			);
 			path = "Custom Colors";
 			sourceTree = "<group>";
@@ -447,8 +453,10 @@
 				AA11D6E626692C7000B35944 /* AppDelegate.swift in Sources */,
 				AA00778A2669602A002346E1 /* EmotionController.swift in Sources */,
 				AA374CFF2669AC95000B0C84 /* EmotionDetailViewController.swift in Sources */,
+				AA59B7B926CAF9D2004842DE /* UpdateTopBackground.swift in Sources */,
 				AA374D0D2669B8BA000B0C84 /* DateFormat.swift in Sources */,
 				AA374D0B2669B51F000B0C84 /* EmojiGrabber.swift in Sources */,
+				AA59B7B726CAF1D3004842DE /* CellColors.swift in Sources */,
 				AA11D6E826692C7000B35944 /* SceneDelegate.swift in Sources */,
 				AA007781266943BC002346E1 /* Emotion+Convenience.swift in Sources */,
 			);
