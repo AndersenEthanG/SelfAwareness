@@ -28,6 +28,7 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     static var emotionName: String?
     var emotionNameCheck: String = ""
     var noteText = ""
+    var sadFiveCount = 0
     
     
     // MARK: - Lifecycle
@@ -161,6 +162,24 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         }
     } // End of Keyboard will hide Function
     
+    func easterEgg() {
+        if traitCollection.userInterfaceStyle == .dark {        
+            if emotionNameCheck == "afraid" {
+                sadFiveCount += 1
+                if sadFiveCount == 5 {
+                    fifthBtn.setTitle("", for: .normal)
+                    guard let herobrine: UIImage = UIImage(named: "herobrine") else { return }
+                    fifthBtn.setImage(herobrine, for: .normal)
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                        self.fifthBtn.setImage(nil, for: .normal)
+                        self.fifthBtn.setTitle("😱", for: .normal)
+                        self.sadFiveCount = 0
+                    }
+                }
+            }
+        }
+    } // End of Easter Egg
     
     // MARK: - Actions
     // These will update the strength status of how the person feels
@@ -190,6 +209,8 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         saveBtn.isEnabled = true
         emotionLevel = 4
         emotionEmojiTintUpdate(emotionIndex: 4)
+        
+        easterEgg()
     }
     
     @IBAction func saveBtnTap(_ sender: Any) {
