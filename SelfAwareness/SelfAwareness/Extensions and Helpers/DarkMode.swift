@@ -46,8 +46,6 @@ extension EmotionDetailViewController {
         }
         
         emotionNameLabel.textColor = textColor
-        emotionNoteView.textColor = textColor
-        emotionNoteView.textColor = textColor
         
         
     } // End of Function

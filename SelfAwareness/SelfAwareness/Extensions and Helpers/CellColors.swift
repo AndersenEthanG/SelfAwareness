@@ -21,9 +21,9 @@ class CellColors {
         case "afraid":
             returnColorHex = "b88ee0"
         case "happyDark":
-            returnColorHex = "ada218"
+            returnColorHex = "C4B300"
         case "madDark":
-            returnColorHex = "d2271f"
+            returnColorHex = "D6150C"
         case "sadDark":
             returnColorHex = "0053e2"
         case "afraidDark":

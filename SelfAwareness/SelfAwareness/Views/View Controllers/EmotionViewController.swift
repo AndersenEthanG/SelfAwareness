@@ -70,15 +70,15 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // This makes the navigation item on the main page go away
-        tableView.dataSource = self
-        tableView.delegate = self
         
         /*
-        // Depreciated
-        // Gradients background
-        updateBackground()
+        // This makes the navigation item on the main page go away
+        self.navigationController?.overrideUserInterfaceStyle = .light
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         */
+        
+        tableView.dataSource = self
+        tableView.delegate = self
         
         darkModeUpdate()
         updateBtns()
@@ -171,7 +171,7 @@ extension EmotionViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell ?? UITableViewCell()
     }
-    
+
     // Cell count
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return EmotionController.sharedInstance.emotions.count

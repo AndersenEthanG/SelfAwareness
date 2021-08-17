@@ -9,7 +9,6 @@ import UIKit
 
 class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     
-    
     // MARK: - Outlets
     @IBOutlet weak var firstBtn: UIButton!
     @IBOutlet weak var secondBtn: UIButton!
@@ -34,19 +33,9 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Make the navigation bar reappear (Main page makes it dissapear)
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-        // This is for dismissing the keyboard on touching
-        self.emotionNoteView.delegate = self
         
-        saveBtn.isEnabled = false
+        setupView()
         updateView()
-        
-        // Keyboard moving the screen up and down a little
-        NotificationCenter.default.addObserver(self, selector: #selector(EmotionDetailViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(EmotionDetailViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-    
-        datePicker.addTarget(self, action: #selector(datePickerChanged(picker:)), for: .valueChanged)
     } // End of Function viewDidLoad
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,18 +52,41 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     } // End of Function
     
     func textViewDidBeginEditing(_ noteTextView: UITextView) {
-        if emotionNoteView.textColor == UIColor.darkGray {
+        if emotionNoteView.textColor == UIColor.darkGray || emotionNoteView.textColor == UIColor.lightGray {
             emotionNoteView.text = nil
-            emotionNoteView.textColor = UIColor.black
+            if traitCollection.userInterfaceStyle == .light {
+                emotionNoteView.textColor = UIColor.black
+            } else if traitCollection.userInterfaceStyle == .dark {
+                emotionNoteView.textColor = UIColor.white
+            }
         }
         
         if emotionNoteView.textColor == UIColor.lightGray {
-            emotionNoteView.textColor = UIColor.white
+            if traitCollection.userInterfaceStyle == .light {
+                emotionNoteView.textColor = UIColor.black
+            } else if traitCollection.userInterfaceStyle == .dark {
+                emotionNoteView.textColor = UIColor.white
+            }
         }
     } // End of Func
     
     
     // MARK: - Functions
+    func setupView() {
+        // Make the navigation bar reappear (Main page makes it dissapear)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        // This is for dismissing the keyboard on touching
+        self.emotionNoteView.delegate = self
+        
+        saveBtn.isEnabled = false
+        
+        // Keyboard moving the screen up and down a little
+        NotificationCenter.default.addObserver(self, selector: #selector(EmotionDetailViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(EmotionDetailViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    
+        datePicker.addTarget(self, action: #selector(datePickerChanged(picker:)), for: .valueChanged)
+    } // End of Setup view
+    
     func updateView() {
         if EmotionDetailViewController.emotionName == nil {
             emotionNameCheck = emotion?.emotionName ?? ""
@@ -84,7 +96,6 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         
         emotionNameLabel.text = "How \(emotionNameCheck) do you feel?"
         datePicker.date = emotion?.startTime ?? Date()
-        emotionNoteViewUpdate()
         updateColors()
         
         // Emoji Buttons
@@ -99,37 +110,37 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         // Checking the emoji level for tints
         let emotionLevel = emotion?.emotionLevel
         emotionEmojiTintUpdate(emotionIndex: emotionLevel ?? 0)
-        if emotion?.note != "" {
-            emotionNoteView.text = emotion?.note            
-        } else {
-            updateNoteText()
-        }
         
-        darkModeUpdate()
         updateNoteText()
+        darkModeUpdate()
     } // End of Function
 
     // Update Note text
     func updateNoteText() {
-        if emotionNoteView.text == "" {
+        if emotionNoteView.text == "" || emotionNoteView.text == "What changed?" {
             emotionNoteView.text = "What changed?"
             
             if traitCollection.userInterfaceStyle == .dark {
                 emotionNoteView.textColor = UIColor.lightGray
-            } else {
+                emotionNoteView.layer.borderColor = UIColor.white.cgColor
+            } else if traitCollection.userInterfaceStyle == .light {
                 emotionNoteView.textColor = UIColor.darkGray
+                emotionNoteView.layer.borderColor = UIColor.gray.cgColor
             }
             
-        } else {
+        } else if emotionNoteView.text != "" || emotionNoteView.text != "What changed?" {
             saveBtn.isEnabled = true
             emotionNoteView.text = emotion?.note
             
             if traitCollection.userInterfaceStyle == .dark {
                 emotionNoteView.textColor = UIColor.lightGray
-            } else {
-                emotionNoteView.textColor = UIColor.darkGray
+            } else if traitCollection.userInterfaceStyle == .light {
+                emotionNoteView.textColor = UIColor.lightGray
             }
         }
+        
+        emotionNoteView.layer.borderWidth = 2
+        emotionNoteView.layer.cornerRadius = 10
     } // End of Function
     
     // Keyboard scooting the screen stuff
@@ -209,18 +220,6 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         } else {
             saveBtn.isEnabled = false
         }
-    }
-    
-    func emotionNoteViewUpdate() {
-        emotionNoteView.layer.borderWidth = 2
-        
-        if self.traitCollection.userInterfaceStyle == .dark {
-            emotionNoteView.layer.borderColor = UIColor.white.cgColor
-        } else {
-            emotionNoteView.layer.borderColor = UIColor.black.cgColor
-        }
-        
-        emotionNoteView.layer.cornerRadius = 10
-    } // End of Function
-    
+    } // End of Date picker has changed
+
 } // End of Class
