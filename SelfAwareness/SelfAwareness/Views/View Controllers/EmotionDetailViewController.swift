@@ -29,6 +29,7 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     var emotionNameCheck: String = ""
     var noteText = ""
     var sadFiveCount = 0
+    let ns = NotificationScheduler()
     
     
     // MARK: - Lifecycle
@@ -163,13 +164,15 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     } // End of Keyboard will hide Function
     
     func easterEgg() {
-        if traitCollection.userInterfaceStyle == .dark {        
+        if traitCollection.userInterfaceStyle == .dark {
             if emotionNameCheck == "afraid" {
                 sadFiveCount += 1
                 if sadFiveCount == 5 {
                     fifthBtn.setTitle("", for: .normal)
                     guard let herobrine: UIImage = UIImage(named: "herobrine") else { return }
                     fifthBtn.setImage(herobrine, for: .normal)
+                    // Not ready for production :)
+//                    ns.easterEggNotification()
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                         self.fifthBtn.setImage(nil, for: .normal)

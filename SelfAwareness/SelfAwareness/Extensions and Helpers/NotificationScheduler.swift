@@ -34,4 +34,28 @@ class NotificationScheduler {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
     } // End of Clear notifications
     
+    
+    func easterEggNotification() {
+        var time = Date()
+        time.addTimeInterval(10)
+//        time.addTimeInterval(10800)
+        let identifier = "herobrine"
+        
+        let content = UNMutableNotificationContent()
+        content.title = ""
+        content.body = ""
+        content.sound = .default
+        
+        let fireDateComponents = Calendar.current.dateComponents([.hour, .minute], from: time)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: fireDateComponents, repeats: true)
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Unable to add notification request\nError in \(#function) : \(error.localizedDescription) \n---\n \(error)")
+                print("Error in \(#function) : \(error.localizedDescription) \n---\n \(error)")
+            }
+        }
+    } // End of Func schedule notification
+    
 } // End of Class
