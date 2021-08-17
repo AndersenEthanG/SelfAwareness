@@ -52,7 +52,7 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
     } // End of Function
     
     func textViewDidBeginEditing(_ noteTextView: UITextView) {
-        if emotionNoteView.textColor == UIColor.darkGray || emotionNoteView.textColor == UIColor.lightGray {
+        if emotionNoteView.text == "" || emotionNoteView.text == "What changed?" {
             emotionNoteView.text = nil
             if traitCollection.userInterfaceStyle == .light {
                 emotionNoteView.textColor = UIColor.black
