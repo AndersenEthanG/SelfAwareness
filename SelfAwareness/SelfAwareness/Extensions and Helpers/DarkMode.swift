@@ -40,11 +40,14 @@ extension EmotionViewController {
 extension EmotionDetailViewController {
     func darkModeUpdate() {
         var textColor: UIColor = .black
+        var otherColor = UIColor.black.cgColor
         
         if self.traitCollection.userInterfaceStyle == .dark {
             textColor = .white
+            otherColor = UIColor.white.cgColor
         }
         
+        emotionNoteView.layer.borderColor = otherColor
         emotionNameLabel.textColor = textColor
         
         

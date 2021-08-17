@@ -121,7 +121,7 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
             emotionNoteView.text = "What changed?"
             
             if traitCollection.userInterfaceStyle == .dark {
-                emotionNoteView.textColor = UIColor.lightGray
+                emotionNoteView.textColor = UIColor.white
                 emotionNoteView.layer.borderColor = UIColor.white.cgColor
             } else if traitCollection.userInterfaceStyle == .light {
                 emotionNoteView.textColor = UIColor.darkGray
@@ -135,7 +135,7 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
             if traitCollection.userInterfaceStyle == .dark {
                 emotionNoteView.textColor = UIColor.lightGray
             } else if traitCollection.userInterfaceStyle == .light {
-                emotionNoteView.textColor = UIColor.lightGray
+                emotionNoteView.textColor = UIColor.black
             }
         }
         
