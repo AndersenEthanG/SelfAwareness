@@ -7,30 +7,6 @@
 
 import UIKit
 
-/*
-// Depreciated
-extension EmotionViewController {
-    
-    func updateBackground() {
-        let pickerGradient = CAGradientLayer()
-        pickerGradient.frame = emotionPickerView.bounds
-        pickerGradient.colors = [
-            UIColor.white.cgColor,
-            UIColor.white.cgColor,
-            UIColor.systemYellow.cgColor,
-            UIColor.systemRed.cgColor,
-            UIColor.systemBlue.cgColor,
-            UIColor.systemPurple.cgColor,
-            UIColor.white.cgColor
-        ]
-        emotionPickerView.layer.insertSublayer(pickerGradient, at: 0)
-        
-        overrideUserInterfaceStyle = .light
-    } // End of Function updateBackground
-    
-} // End of Extension
-*/
-
 extension EmotionDetailViewController {
     
     func updateColors() {
@@ -46,22 +22,22 @@ extension EmotionDetailViewController {
         if emotionColor == "happy" {
             gradient.colors = [
                 firstColor,
-                UIColor.systemYellow.cgColor
+                CellColors.getColor(emotionName: "happy").cgColor
             ]
         } else if emotionColor == "mad" {
             gradient.colors = [
                 firstColor,
-                UIColor.systemRed.cgColor
+                CellColors.getColor(emotionName: "mad").cgColor
             ]
         } else if emotionColor == "sad" {
             gradient.colors = [
                 firstColor,
-                UIColor.systemBlue.cgColor
+                CellColors.getColor(emotionName: "sad").cgColor
             ]
         } else if emotionColor == "afraid" {
             gradient.colors = [
                 firstColor,
-                UIColor.systemPurple.cgColor
+                CellColors.getColor(emotionName: "afraid").cgColor
             ]
         } else {
             gradient.colors = [
