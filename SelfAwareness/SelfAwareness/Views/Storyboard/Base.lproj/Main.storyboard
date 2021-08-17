@@ -8,20 +8,60 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Reminders View Controller-->
         <scene sceneID="Zjw-sY-cpR">
             <objects>
-                <viewController id="o5A-AA-hOm" sceneMemberID="viewController">
+                <viewController id="o5A-AA-hOm" customClass="RemindersViewController" customModule="SelfAwareness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h4j-e6-IdR">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="DCo-wt-i1L">
+                                <rect key="frame" x="32" y="64.000000000000028" width="364" height="504.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set A Reminder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E39-MH-Jym">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="28.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="QW0-14-8Bm">
+                                        <rect key="frame" x="0.0" y="44.666666666666686" width="364" height="360"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lt-Zz-rDN">
+                                        <rect key="frame" x="0.0" y="420.66666666666669" width="364" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Add Reminder"/>
+                                        <connections>
+                                            <action selector="addReminderBtn:" destination="o5A-AA-hOm" eventType="touchUpInside" id="zg4-LK-psO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8X-kg-OeD">
+                                        <rect key="frame" x="0.0" y="470.66666666666663" width="364" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Clear Notifications"/>
+                                        <connections>
+                                            <action selector="clearNotificationsBtn:" destination="o5A-AA-hOm" eventType="touchUpInside" id="6nn-Pw-9C7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="L8d-Vv-2m6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DCo-wt-i1L" firstAttribute="leading" secondItem="L8d-Vv-2m6" secondAttribute="leading" constant="32" id="7ZK-57-bqP"/>
+                            <constraint firstItem="DCo-wt-i1L" firstAttribute="top" secondItem="L8d-Vv-2m6" secondAttribute="top" constant="64" id="In0-aC-OV9"/>
+                            <constraint firstItem="L8d-Vv-2m6" firstAttribute="trailing" secondItem="DCo-wt-i1L" secondAttribute="trailing" constant="32" id="jDe-5D-js9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="QW0-14-8Bm" id="2NN-PS-MqH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Boy-rO-Qz9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1737" y="80"/>
+            <point key="canvasLocation" x="1736.9158878504672" y="79.697624190064801"/>
         </scene>
         <!--Emotion View Controller-->
         <scene sceneID="KkG-sF-xtA">

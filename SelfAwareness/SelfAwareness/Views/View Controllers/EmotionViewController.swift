@@ -44,7 +44,7 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
         
         EmotionController.sharedInstance.createEmotion(emotionName: watchEmotionName as! String, emotionLevel: watchEmotionLevel as! Int, emotionNote: watchNote as? String ?? "", timestamp: watchTimestamp as? Date ?? Date())
         
-        tableView.reloadData()
+        refreshApp()
     } // End of function watch to phone update
     
     
@@ -92,6 +92,10 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(fetchEmotions), name: UIApplication.didBecomeActiveNotification, object: nil)
         EmotionController.sharedInstance.fetchEmotion()
         tableView.reloadData()
+        
+        
+        // Refresh app frequently
+        refreshApp()
     } // End of View Did Load
     
     override func viewWillAppear(_ animated: Bool) {
@@ -136,6 +140,14 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
         EmotionController.sharedInstance.fetchEmotion()
         tableView.reloadData()
     } // End of Function
+    
+    func refreshApp() {
+        tableView.reloadData()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3600) {
+            self.refreshApp()
+        }
+    }
     
     
     // MARK: - Navigation

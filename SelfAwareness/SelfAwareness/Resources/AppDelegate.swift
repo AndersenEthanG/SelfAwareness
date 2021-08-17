@@ -7,15 +7,42 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Notifications
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { authorized, error in
+            if let error = error {
+                print("There was an error requesting authorization to use notifications. Error: \(error)")
+            }
+            if authorized {
+                UNUserNotificationCenter.current().delegate = self
+                self.setNotificationCategories()
+                print("Authorized notifications")
+            } else {
+                print("Declined notifications")
+            }
+        } // End of Notification Center
+        
+        
         return true
-    }
+    } // End of Did finish launching with options
 
+    // MARK: - Notification Center
+    private func setNotificationCategories() {
+        let setReminder = UNNotificationAction(identifier: Strings.setReminder, title: "Set Reminder", options: UNNotificationActionOptions(rawValue: 0))
+        
+        let meetingInviteCategory = UNNotificationCategory(identifier: Strings.notificationCategoryIdentifier, actions: [setReminder], intentIdentifiers: [], hiddenPreviewsBodyPlaceholder: "", options: .customDismissAction)
+        
+        UNUserNotificationCenter.current().setNotificationCategories([meetingInviteCategory])
+    } // End of Set Notification Categories
+    
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

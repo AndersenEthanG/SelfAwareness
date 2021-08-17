@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct StringConstants {
+enum Strings {
     static let happy = "happy"
     static let afraid = "afraid"
     static let emotionLevel = "emotionLevel"
@@ -16,4 +16,8 @@ struct StringConstants {
     static let sad = "sad"
     static let timestamp = "timestamp"
     static let recordType = "Emotion"
-}
+
+    static let setReminder = "SetReminder"
+    static let notificationCategoryIdentifier = "AppReminder"
+    static let reminderReceivedNotificationName = "ReminderReceivedNotification"
+} // End of enum Strings
