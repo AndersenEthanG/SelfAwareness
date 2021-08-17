@@ -99,6 +99,32 @@
             </objects>
             <point key="canvasLocation" x="409" y="38"/>
         </scene>
+        <!--textVC-->
+        <scene sceneID="n1u-bB-Lrp">
+            <objects>
+                <controller identifier="textVC" id="BJM-Fc-inH" customClass="AddTextInterfaceController" customModule="SelfAwareness_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="80" alignment="left" text="Notes?" textAlignment="left" id="eNf-bz-cbh"/>
+                        <button width="1" alignment="left" title="Yes" id="YOy-Z2-8Xs">
+                            <connections>
+                                <action selector="addNoteBtn" destination="BJM-Fc-inH" id="w7B-NV-ib3"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="I'm alright - Save" id="3Va-LA-aoR">
+                            <connections>
+                                <action selector="saveBtnTapped" destination="BJM-Fc-inH" id="PEB-Y2-2lg"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="noteLabel" destination="eNf-bz-cbh" id="BcL-3B-zWb"/>
+                        <outlet property="saveBtn" destination="3Va-LA-aoR" id="meK-7g-sTq"/>
+                        <outlet property="yesBtn" destination="YOy-Z2-8Xs" id="b1P-Ob-hsy"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="646.73913043478262" y="36.428571428571431"/>
+        </scene>
         <!--messageVC-->
         <scene sceneID="Haj-ee-XKD">
             <objects>
@@ -116,7 +142,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="689" y="38"/>
+            <point key="canvasLocation" x="885" y="38"/>
         </scene>
     </scenes>
 </document>

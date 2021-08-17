@@ -39,9 +39,10 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
         print(message)
         let watchEmotionName = message["emotionName"]
         let watchEmotionLevel = message["emotionLevel"]
+        let watchNote = message["note"]
         let watchTimestamp = message["timestamp"]
         
-        EmotionController.sharedInstance.createEmotion(emotionName: watchEmotionName as! String, emotionLevel: watchEmotionLevel as! Int, timestamp: watchTimestamp as? Date ?? Date())
+        EmotionController.sharedInstance.createEmotion(emotionName: watchEmotionName as! String, emotionLevel: watchEmotionLevel as! Int, emotionNote: watchNote as? String ?? "", timestamp: watchTimestamp as? Date ?? Date())
         
         tableView.reloadData()
     } // End of function watch to phone update

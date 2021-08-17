@@ -7,35 +7,9 @@
 
 import WatchKit
 import Foundation
-import WatchConnectivity
 
 
-class EmotionInterfaceController: WKInterfaceController, WCSessionDelegate {
-
-    // MARK: - Watch Connectivity
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        switch activationState {
-        case .activated:
-            print("Watch WCSession activated")
-        case .inactive:
-            print("Watch WCSession inactive")
-        case .notActivated:
-            print("Watch WCSession not activated")
-        default:
-            print("Something went wrong on the WC Session activation!")
-        } // End of Switch
-    } // End of Function
-    
-    // Transfer User Information (Background send Message)
-    func sendMessage() {
-        if session.activationState == .activated {
-            session.transferUserInfo(message)
-        }
-    } // End of Function
-    var session = WCSession.default
-    
-     // End of Watch Connectivity
-    
+class EmotionInterfaceController: WKInterfaceController {
     
     // MARK: - Outlets
     @IBOutlet weak var firstBtn: WKInterfaceButton!
@@ -51,10 +25,6 @@ class EmotionInterfaceController: WKInterfaceController, WCSessionDelegate {
         
         emotionName = context as! String
         print(emotionName)
-        let session = WCSession.default
-        session.delegate = self
-        session.activate()
-        
         updateView()
     }
     
@@ -66,35 +36,34 @@ class EmotionInterfaceController: WKInterfaceController, WCSessionDelegate {
     // MARK: - Properties
     var emotionName: String = ""
     var emotionLevel: Int = 0
-    var message: [String: Any] = ["emotionName" : "", "emotionLevel" : 0, "timestamp" : Date()]
     
     // MARK: - Actions
     // These will work as the save button as on the EmotionDetail controller
     // Also present something saying saved or whatever
     @IBAction func firstBtnTap() {
-        message = ["emotionName" : emotionName, "emotionLevel" : 0, "timestamp" : Date()]
-        sendMessage()
-        pushController(withName: "messageVC", context: nil)
+        let message = Message(emotionName: emotionName, emotionLevel: 0, timestamp: Date(), note: "")
+        AddTextInterfaceController.message = message
+        pushController(withName: "textVC", context: nil)
     }
     @IBAction func secondBtnTap() {
-        message = ["emotionName" : emotionName, "emotionLevel" : 1, "timestamp" : Date()]
-        sendMessage()
-        pushController(withName: "messageVC", context: nil)
+        let message = Message(emotionName: emotionName, emotionLevel: 1, timestamp: Date(), note: "")
+        AddTextInterfaceController.message = message
+        pushController(withName: "textVC", context: nil)
     }
     @IBAction func thirdBtnTap() {
-        message = ["emotionName" : emotionName, "emotionLevel" : 2, "timestamp" : Date()]
-        sendMessage()
-        pushController(withName: "messageVC", context: nil)
+        let message = Message(emotionName: emotionName, emotionLevel: 2, timestamp: Date(), note: "")
+        AddTextInterfaceController.message = message
+        pushController(withName: "textVC", context: nil)
     }
     @IBAction func fourthBtnTap() {
-        message = ["emotionName" : emotionName, "emotionLevel" : 3, "timestamp" : Date()]
-        sendMessage()
-        pushController(withName: "messageVC", context: nil)
+        let message = Message(emotionName: emotionName, emotionLevel: 3, timestamp: Date(), note: "")
+        AddTextInterfaceController.message = message
+        pushController(withName: "textVC", context: nil)
     }
     @IBAction func fifthBtnTap() {
-        message = ["emotionName" : emotionName, "emotionLevel" : 4, "timestamp" : Date()]
-        sendMessage()
-        pushController(withName: "messageVC", context: nil)
+        let message = Message(emotionName: emotionName, emotionLevel: 4, timestamp: Date(), note: "")
+        AddTextInterfaceController.message = message
+        pushController(withName: "textVC", context: nil)
     }
     
     

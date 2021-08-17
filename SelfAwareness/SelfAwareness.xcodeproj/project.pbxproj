@@ -40,6 +40,7 @@
 		AA59B7BF26CB1B63004842DE /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B7BE26CB1B63004842DE /* RemindersViewController.swift */; };
 		AA5BCC61266AB96C0055750F /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5BCC60266AB96C0055750F /* EmotionViewController.swift */; };
 		AA7B6A822673C820000B7E95 /* BackgroundColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B6A812673C820000B7E95 /* BackgroundColors.swift */; };
+		AADE8F5F26CC2B2F00F69348 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8F5E26CC2B2F00F69348 /* MessageModel.swift */; };
 		AAE19AD3266EE0510001E858 /* StringCapitalizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +126,7 @@
 		AA59B7BE26CB1B63004842DE /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
 		AA5BCC60266AB96C0055750F /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
 		AA7B6A812673C820000B7E95 /* BackgroundColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColors.swift; sourceTree = "<group>"; };
+		AADE8F5E26CC2B2F00F69348 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCapitalizing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -280,6 +282,7 @@
 				AA11D71226692C7200B35944 /* Assets.xcassets */,
 				AA11D71426692C7200B35944 /* Info.plist */,
 				AA11D71526692C7200B35944 /* PushNotificationPayload.apns */,
+				AADE8F5E26CC2B2F00F69348 /* MessageModel.swift */,
 			);
 			path = "SelfAwareness WatchKit Extension";
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				AA11D70F26692C7100B35944 /* NotificationController.swift in Sources */,
 				AA59B7BB26CB00F2004842DE /* AddTextInterfaceController.swift in Sources */,
 				AA24D53D267027BB007AA3A6 /* MessageInterfaceController.swift in Sources */,
+				AADE8F5F26CC2B2F00F69348 /* MessageModel.swift in Sources */,
 				AA11D71126692C7100B35944 /* ComplicationController.swift in Sources */,
 				AA2DE7A7266FF96D00CB900E /* EmotionInterfaceController.swift in Sources */,
 				AA11D70D26692C7100B35944 /* ExtensionDelegate.swift in Sources */,
