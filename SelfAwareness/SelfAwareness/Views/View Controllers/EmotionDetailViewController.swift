@@ -45,6 +45,8 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         // Keyboard moving the screen up and down a little
         NotificationCenter.default.addObserver(self, selector: #selector(EmotionDetailViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(EmotionDetailViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    
+        datePicker.addTarget(self, action: #selector(datePickerChanged(picker:)), for: .valueChanged)
     } // End of Function viewDidLoad
     
     override func viewWillAppear(_ animated: Bool) {
@@ -200,6 +202,14 @@ class EmotionDetailViewController: UIViewController, UITextViewDelegate {
         // Pop View controller
         navigationController?.popViewController(animated: true)
     } // End of Save Button
+    
+    @objc func datePickerChanged(picker: UIDatePicker) {
+        if datePicker.date != emotion?.timestamp {
+            saveBtn.isEnabled = true
+        } else {
+            saveBtn.isEnabled = false
+        }
+    }
     
     func emotionNoteViewUpdate() {
         emotionNoteView.layer.borderWidth = 2

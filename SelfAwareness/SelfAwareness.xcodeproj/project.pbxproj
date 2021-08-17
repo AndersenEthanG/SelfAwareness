@@ -37,6 +37,7 @@
 		AA59B7B926CAF9D2004842DE /* UpdateTopBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B7B826CAF9D2004842DE /* UpdateTopBackground.swift */; };
 		AA59B7BB26CB00F2004842DE /* AddTextInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B7BA26CB00F2004842DE /* AddTextInterfaceController.swift */; };
 		AA59B7BD26CB01A6004842DE /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B7BC26CB01A6004842DE /* DarkMode.swift */; };
+		AA59B7BF26CB1B63004842DE /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B7BE26CB1B63004842DE /* RemindersViewController.swift */; };
 		AA5BCC61266AB96C0055750F /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5BCC60266AB96C0055750F /* EmotionViewController.swift */; };
 		AA7B6A822673C820000B7E95 /* BackgroundColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B6A812673C820000B7E95 /* BackgroundColors.swift */; };
 		AAE19AD3266EE0510001E858 /* StringCapitalizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */; };
@@ -121,6 +122,7 @@
 		AA59B7B826CAF9D2004842DE /* UpdateTopBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTopBackground.swift; sourceTree = "<group>"; };
 		AA59B7BA26CB00F2004842DE /* AddTextInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTextInterfaceController.swift; sourceTree = "<group>"; };
 		AA59B7BC26CB01A6004842DE /* DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
+		AA59B7BE26CB1B63004842DE /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
 		AA5BCC60266AB96C0055750F /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
 		AA7B6A812673C820000B7E95 /* BackgroundColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColors.swift; sourceTree = "<group>"; };
 		AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCapitalizing.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			children = (
 				AA5BCC60266AB96C0055750F /* EmotionViewController.swift */,
 				AA374CFE2669AC95000B0C84 /* EmotionDetailViewController.swift */,
+				AA59B7BE26CB1B63004842DE /* RemindersViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				AA59B7B926CAF9D2004842DE /* UpdateTopBackground.swift in Sources */,
 				AA374D0D2669B8BA000B0C84 /* DateFormat.swift in Sources */,
 				AA374D0B2669B51F000B0C84 /* EmojiGrabber.swift in Sources */,
+				AA59B7BF26CB1B63004842DE /* RemindersViewController.swift in Sources */,
 				AA59B7B726CAF1D3004842DE /* CellColors.swift in Sources */,
 				AA11D6E826692C7000B35944 /* SceneDelegate.swift in Sources */,
 				AA007781266943BC002346E1 /* Emotion+Convenience.swift in Sources */,
