@@ -9,7 +9,7 @@ import CoreData
 import CloudKit
 
 enum CoreDataStack {
-    // I changed teh NSPersistenceContainer to have the word CloudKit in the middle, that way it works nice (Thanks Apple)
+    // I changed the NSPersistenceContainer to have the word CloudKit in the middle, that way it works nice (Thanks Apple)
     static let container: NSPersistentCloudKitContainer = {
         let container = NSPersistentCloudKitContainer(name: "EmotionManager")
         

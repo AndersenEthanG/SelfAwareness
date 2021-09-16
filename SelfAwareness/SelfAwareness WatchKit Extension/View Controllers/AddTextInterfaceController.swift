@@ -38,9 +38,7 @@ class AddTextInterfaceController: WKInterfaceController, WCSessionDelegate {
     
     
     func setupWatchDelegate() {
-        let session = WCSession.default
-        session.delegate = self
-        session.activate()
+ 
     }
      // End of Watch Connectivity
 

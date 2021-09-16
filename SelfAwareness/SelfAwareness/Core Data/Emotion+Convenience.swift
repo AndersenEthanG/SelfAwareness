@@ -6,7 +6,6 @@
 //
 
 import CoreData
-import CloudKit
 
 extension Emotion {
     
