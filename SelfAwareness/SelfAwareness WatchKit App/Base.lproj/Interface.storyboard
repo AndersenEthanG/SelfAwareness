@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19162" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch44"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19044"/>
     </dependencies>
     <scenes>
         <!--interfaceVC-->
@@ -104,7 +105,7 @@
             <objects>
                 <controller identifier="textVC" id="BJM-Fc-inH" customClass="AddTextInterfaceController" customModule="SelfAwareness_WatchKit_Extension">
                     <items>
-                        <label width="136" height="80" alignment="left" text="Notes?" textAlignment="left" id="eNf-bz-cbh"/>
+                        <label width="136" height="80" alignment="left" text="Notes?" textAlignment="left" numberOfLines="4" id="eNf-bz-cbh"/>
                         <button width="1" alignment="left" title="Yes" id="YOy-Z2-8Xs">
                             <connections>
                                 <action selector="addNoteBtn" destination="BJM-Fc-inH" id="w7B-NV-ib3"/>
