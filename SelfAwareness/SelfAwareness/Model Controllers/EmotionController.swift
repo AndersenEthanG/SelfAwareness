@@ -47,7 +47,11 @@ class EmotionController {
     } // End of Update emotion
     
     func fetchEmotion() {
-        emotions = (try? CoreDataStack.context.fetch(fetchRequest)) ?? []
+        var fetchedEmotions = (try? CoreDataStack.context.fetch(fetchRequest)) ?? []
+        
+        fetchedEmotions.sort(by: {$0.startTime!.timeIntervalSinceNow > $1.startTime!.timeIntervalSinceNow})
+        
+        emotions = fetchedEmotions
     } // End of Fetch emotion
     
     func deleteEmotion(emotion: Emotion) {
