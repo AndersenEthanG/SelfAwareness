@@ -51,6 +51,8 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var emotionPickerView: UIView!
+    @IBOutlet weak var sortByButtonOutlet: UIButton!
+    
     
     // Buttons
     @IBOutlet weak var happyBtn: UIButton!
@@ -60,11 +62,19 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
     
     
     // MARK: - Properties
-    var emotions: [Emotion] = []
+    var filteredEmotions: [Emotion] = []
+    var unfilteredEmotions: [Emotion] = []
     var emotionEmojis: [String] = []
     var emotionName: String = ""
     var emotionLevel: Int = 0
     var message: [String: Any] = ["emotionName" : "", "emotionLevel" : 0]
+    
+    // Filter by
+    var showHappy = true
+    var showMad = true
+    var showSad = true
+    var showAfraid = true
+    var showChronological = true
     
     
     // MARK: - Lifecycle
@@ -89,12 +99,12 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
             session.delegate = self
             session.activate()
         }
-        NotificationCenter.default.addObserver(self, selector: #selector(fetchEmotions), name: UIApplication.didBecomeActiveNotification, object: nil)
-        EmotionController.sharedInstance.fetchEmotion()
+        
+        unfilteredEmotions = EmotionController.sharedInstance.fetchEmotion()
+        filterEmotions()
         tableView.reloadData()
         
-        
-        // Refresh app frequently
+        // Refreshes app frequently
         refreshApp()
     } // End of View Did Load
     
@@ -134,20 +144,128 @@ class EmotionViewController: UIViewController, WCSessionDelegate {
         EmotionDetailViewController.emotionName = emotion
     }
 
+    @IBAction func sorByButton(_ sender: Any) {
+        let alert = UIAlertController(title: "How would you like your logs displayed?", message: "Press a button to toggle visibility", preferredStyle: .actionSheet)
+        
+        // Buttons
+        let happyAlertBtn = UIAlertAction(title: "Happy", style: .default) { _ in
+            self.showHappy.toggle()
+            self.filterEmotions()
+            self.tableView.reloadData()
+        } // End of Happy Button
+        
+        let madAlertBtn = UIAlertAction(title: "Mad", style: .default) { _ in
+            self.showMad.toggle()
+            self.filterEmotions()
+            self.tableView.reloadData()
+        } // End of Mad Button
+        
+        let sadAlertBtn = UIAlertAction(title: "Sad", style: .default) { _ in
+            self.showSad.toggle()
+            self.filterEmotions()
+            self.tableView.reloadData()
+        } // End of Sad button
+        
+        let afraidAlertBtn = UIAlertAction(title: "Afraid", style: .default) { _ in
+            self.showAfraid.toggle()
+            self.filterEmotions()
+            self.tableView.reloadData()
+        } // End of Afraid button
+        
+        let chronologicalAlertBtn = UIAlertAction(title: "Descending", style: .default) { _ in
+            self.showChronological.toggle()
+            self.filterEmotions()
+            self.tableView.reloadData()
+        } // End of Chronological button
+        
+        let doneAlertBtn  = UIAlertAction(title: "Close", style: .cancel) { _ in
+            self.tableView.reloadData()
+        } // End of Done button
+        
+        // Button changing based on whats happening
+        if showHappy == true {
+            happyAlertBtn.setValue("Happy ✓", forKey: "title")
+        } else {
+            happyAlertBtn.setValue("Happy 𐄂", forKey: "title")
+        }
+        
+        if showMad == true {
+            madAlertBtn.setValue("Mad ✓", forKey: "title")
+        } else {
+            madAlertBtn.setValue("Mad 𐄂", forKey: "title")
+        }
+        
+        if showSad == true {
+            sadAlertBtn.setValue("Sad ✓", forKey: "title")
+        } else {
+            sadAlertBtn.setValue("Sad 𐄂", forKey: "title")
+        }
+        
+        if showAfraid == true {
+            afraidAlertBtn.setValue("Afraid ✓", forKey: "title")
+        } else {
+            afraidAlertBtn.setValue("Afraid 𐄂", forKey: "title")
+        }
+        
+        if showChronological == true {
+            chronologicalAlertBtn.setValue("Date Descending", forKey: "title")
+        } else {
+            chronologicalAlertBtn.setValue("Date Ascending", forKey: "title")
+        }
+        
+        // Alert finalization and creation
+        alert.addAction(happyAlertBtn)
+        alert.addAction(madAlertBtn)
+        alert.addAction(sadAlertBtn)
+        alert.addAction(afraidAlertBtn)
+        alert.addAction(doneAlertBtn)
+        
+        present(alert, animated: true, completion: nil)
+    } // End of Sort by button
+    
     
     // MARK: - Functions
-    @objc func fetchEmotions() {
-        EmotionController.sharedInstance.fetchEmotion()
-        tableView.reloadData()
-    } // End of Function
-    
     func refreshApp() {
         tableView.reloadData()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3600) {
             self.refreshApp()
         }
-    }
+    } // End of Refresh app
+    
+    func filterEmotions() {
+        let unfilteredEmotions = self.unfilteredEmotions
+        var finalFilteredEmotions: [Emotion] = []
+        
+        for emotion in unfilteredEmotions {
+            let emotionName = emotion.emotionName
+            
+            switch emotionName {
+            case "happy":
+                if showHappy == true {
+                    finalFilteredEmotions.append(emotion)
+                }
+            case "mad":
+                if showMad == true {
+                    finalFilteredEmotions.append(emotion)
+                }
+            case "sad":
+                if showSad == true {
+                    finalFilteredEmotions.append(emotion)
+                }
+            case "afraid":
+                if showAfraid == true {
+                    finalFilteredEmotions.append(emotion)
+                }
+            case .none:
+                print("Is line \(#line) working?")
+            case .some(_):
+                print("Is line \(#line) working?")
+            } // End of Switch
+        } // End of For loop
+        
+        filteredEmotions = finalFilteredEmotions
+    } // End of Filter Emotions
     
     
     // MARK: - Navigation
@@ -170,7 +288,7 @@ extension EmotionViewController: UITableViewDelegate, UITableViewDataSource {
     // Cell content
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "emotionCell", for: indexPath) as? EmotionTableViewCell
-        let emotion = EmotionController.sharedInstance.emotions[indexPath.row]
+        let emotion = filteredEmotions[indexPath.row]
         
         if traitCollection.userInterfaceStyle == .light {
             cell?.backgroundColor = CellColors.getColor(emotionName: emotion.emotionName!)
@@ -186,7 +304,7 @@ extension EmotionViewController: UITableViewDelegate, UITableViewDataSource {
 
     // Cell count
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return EmotionController.sharedInstance.emotions.count
+        return filteredEmotions.count
     }
     
     // Delete cell

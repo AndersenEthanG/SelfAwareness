@@ -39,6 +39,7 @@
 		AA59B7BD26CB01A6004842DE /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B7BC26CB01A6004842DE /* DarkMode.swift */; };
 		AA59B7BF26CB1B63004842DE /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B7BE26CB1B63004842DE /* RemindersViewController.swift */; };
 		AA5BCC61266AB96C0055750F /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5BCC60266AB96C0055750F /* EmotionViewController.swift */; };
+		AA6A483D275FF47300DB0892 /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6A483C275FF47300DB0892 /* SortBy.swift */; };
 		AA7B6A822673C820000B7E95 /* BackgroundColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B6A812673C820000B7E95 /* BackgroundColors.swift */; };
 		AADE8F5F26CC2B2F00F69348 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8F5E26CC2B2F00F69348 /* MessageModel.swift */; };
 		AADE8F6326CC6AB200F69348 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8F6226CC6AB200F69348 /* NotificationScheduler.swift */; };
@@ -126,6 +127,7 @@
 		AA59B7BC26CB01A6004842DE /* DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
 		AA59B7BE26CB1B63004842DE /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
 		AA5BCC60266AB96C0055750F /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
+		AA6A483C275FF47300DB0892 /* SortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortBy.swift; sourceTree = "<group>"; };
 		AA7B6A812673C820000B7E95 /* BackgroundColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColors.swift; sourceTree = "<group>"; };
 		AADE8F5E26CC2B2F00F69348 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		AADE8F6226CC6AB200F69348 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				AAE19AD2266EE0510001E858 /* StringCapitalizing.swift */,
 				AA374D0A2669B51F000B0C84 /* EmojiGrabber.swift */,
 				AA374D0C2669B8BA000B0C84 /* DateFormat.swift */,
+				AA6A483C275FF47300DB0892 /* SortBy.swift */,
 				AA59B7B626CAF1D3004842DE /* CellColors.swift */,
 				AA59B7BC26CB01A6004842DE /* DarkMode.swift */,
 				AADE8F6226CC6AB200F69348 /* NotificationScheduler.swift */,
@@ -468,6 +471,7 @@
 				AAE19AD3266EE0510001E858 /* StringCapitalizing.swift in Sources */,
 				AA11D6E626692C7000B35944 /* AppDelegate.swift in Sources */,
 				AA00778A2669602A002346E1 /* EmotionController.swift in Sources */,
+				AA6A483D275FF47300DB0892 /* SortBy.swift in Sources */,
 				AA374CFF2669AC95000B0C84 /* EmotionDetailViewController.swift in Sources */,
 				AA59B7B926CAF9D2004842DE /* UpdateTopBackground.swift in Sources */,
 				AADE8F6326CC6AB200F69348 /* NotificationScheduler.swift in Sources */,
