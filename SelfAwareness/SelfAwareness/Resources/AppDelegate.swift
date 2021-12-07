@@ -83,4 +83,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
     } // End of Function
 
+    
+    // Homescreen shortcut stuff
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        <#code#>
+    } // End of Function
+    
 } // End of Class
