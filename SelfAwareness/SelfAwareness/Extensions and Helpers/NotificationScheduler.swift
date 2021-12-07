@@ -19,7 +19,7 @@ class NotificationScheduler {
         content.sound = .default
         
         let fireDateComponents = Calendar.current.dateComponents([.hour, .minute], from: time)
-        let trigger = UNCalendarNotificationTrigger(dateMatching: fireDateComponents, repeats: true)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: fireDateComponents, repeats: false)
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
         
         UNUserNotificationCenter.current().add(request) { error in
